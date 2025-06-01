@@ -81,7 +81,7 @@ const modelData: Model[] = [
     description: '嫦娥',
     url: '/Chu Pat Chin 2B03.gltf',
     thumbnailUrl: '/Chu Pat Chin 2B03.png',
-    designer: 'Chu Pat Chin ',
+    designer: 'Chu Pat Chin',
     category: '嫦娥'
   },
   {
@@ -101,6 +101,141 @@ const modelData: Model[] = [
     thumbnailUrl: '/Chung Cheryl 2B04.png',
     designer: 'Chung Cheryl',
     category: '哪吒'
+  },
+  {
+    id: '2G05',
+    name: '孫悟空',
+    description: '孫悟空',
+    url: '/Chung Keith 2G05.gltf',
+    thumbnailUrl: '/Chung Keith 2G05.png',
+    designer: 'Chung Keith',
+    category: '孫悟空'
+  },
+  {
+    id: '2R06',
+    name: '財神',
+    description: '財神',
+    url: '/Ho Wing Hei 2R06.gltf',
+    thumbnailUrl: '/Ho Wing Hei 2R06.png',
+    designer: 'Ho Wing Hei',
+    category: '財神'
+  },
+  {
+    id: '2B05',
+    name: '凡人',
+    description: '凡人',
+    url: '/Hooi Arus Sz Wun 2B05.gltf',
+    thumbnailUrl: '/Hooi Arus Sz Wun 2B05.png',
+    designer: 'Hooi Arus Sz Wun',
+    category: '凡人'
+  },
+  {
+    id: '2R07',
+    name: '媽祖',
+    description: '媽祖',
+    url: '/Lam Tung Yan 2R07.gltf',
+    thumbnailUrl: '/Lam Tung Yan 2R07.png',
+    designer: 'Lam Tung Yan',
+    category: '媽祖'
+  },
+  {
+    id: '2B06',
+    name: '觀音',
+    description: '觀音',
+    url: '/Lau Qian Yu Casey 2B06.gltf',
+    thumbnailUrl: '/Lau Qian Yu Casey 2B06.png',
+    designer: 'Lau Qian Yu Casey',
+    category: '觀音'
+  },
+  {
+    id: '2B07',
+    name: '忍者',
+    description: '忍者',
+    url: '/Lee Tze Yun 2B07.gltf',
+    thumbnailUrl: '/Lee Tze Yun 2B07.png',
+    designer: 'Lee Tze Yun',
+    category: '忍者'
+  },
+  {
+    id: '2B08',
+    name: '哪吒',
+    description: '哪吒',
+    url: '/Lee Yuet Hei Allison 2B08.gltf',
+    thumbnailUrl: '/Lee Yuet Hei Allison 2B08.png',
+    designer: 'Lee Yuet Hei Allison',
+    category: '哪吒'
+  },
+  {
+    id: '2R08',
+    name: '東海龍王',
+    description: '東海龍王',
+    url: '/Leung Beavis 2R08.gltf',
+    thumbnailUrl: '/Leung Beavis 2R08.png',
+    designer: 'Leung Beavis',
+    category: '東海龍王'
+  },
+  {
+    id: '2B09',
+    name: '孫悟空',
+    description: '孫悟空',
+    url: '/Lin Ling Yan 2B09.gltf',
+    thumbnailUrl: '/Lin Ling Yan 2B09.png',
+    designer: 'Lin Ling Yan',
+    category: '孫悟空'
+  },
+  {
+    id: '2B10',
+    name: '嫦娥',
+    description: '嫦娥',
+    url: '/Liu Sophie 2B10.gltf',
+    thumbnailUrl: '/Liu Sophie 2B10.png',
+    designer: 'Liu Sophie',
+    category: '嫦娥'
+  },
+  {
+    id: '2B11',
+    name: '唐三藏',
+    description: '唐三藏',
+    url: '/Lo Julie Wing Ching 2B11.gltf',
+    thumbnailUrl: '/Lo Julie Wing Ching 2B11.png',
+    designer: 'Lo Julie Wing Ching',
+    category: '唐三藏'
+  },
+  {
+    id: '2B12',
+    name: '孫悟空',
+    description: '孫悟空',
+    url: '/Maggio Emanuela Tsz Yu 2B12.gltf',
+    thumbnailUrl: '/Maggio Emanuela Tsz Yu 2B12.png',
+    designer: 'Maggio Emanuela Tsz Yu',
+    category: '孫悟空'
+  },
+  {
+    id: '2B13',
+    name: '哪吒',
+    description: '哪吒',
+    url: '/Mak Chi Ching 2B13.gltf',
+    thumbnailUrl: '/Mak Chi Ching 2B13.png',
+    designer: 'Mak Chi Ching',
+    category: '哪吒'
+  },
+  {
+    id: '2G08',
+    name: '女人',
+    description: '女人',
+    url: '/Man Wing Hei Jessy May.gltf',
+    thumbnailUrl: '/Man Wing Hei Jessy May 2G08.png',
+    designer: 'Man Wing Hei Jessy May',
+    category: '女人'
+  },
+  {
+    id: '2R10',
+    name: '渾沌',
+    description: '渾沌',
+    url: '/Meng Wong Hei 2R10.gltf',
+    thumbnailUrl: '/Meng Wong Hei 2R10.png',
+    designer: 'Meng Wong Hei 2R10',
+    category: '渾沌'
   },
 ]
 
