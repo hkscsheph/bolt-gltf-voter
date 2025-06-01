@@ -202,7 +202,7 @@
   
   onMount(() => {
     const cleanup = initThree()
-    loadModel(model.url)
+    // loadModel(model.url)
     
     return () => {
       cleanup()
