@@ -14,10 +14,6 @@
   let renderer: THREE.WebGLRenderer
   let controls: OrbitControls
   let currentModel: THREE.Object3D | null = null
-  let isDragging = false
-  let startX = 0
-  let startY = 0
-  let moveX = 0
   let loadingProgress = 0
   let isModelLoaded = false
   
@@ -137,59 +133,6 @@
     )
   }
   
-  const handleTouchStart = (e: TouchEvent) => {
-    isDragging = true
-    startX = e.touches[0].clientX
-    startY = e.touches[0].clientY
-    moveX = 0
-  }
-  
-  const handleTouchMove = (e: TouchEvent) => {
-    if (!isDragging) return
-    
-    moveX = e.touches[0].clientX - startX
-    
-    // Apply rotation based on swipe
-    if (currentModel && Math.abs(moveX) > 10) {
-      currentModel.rotation.y = (moveX * 0.01)
-      
-      // Apply tilt effect
-      const tiltAmount = Math.min(Math.abs(moveX) / 200, 0.3)
-      gsap.to(currentModel.rotation, {
-        z: moveX > 0 ? tiltAmount : -tiltAmount,
-        duration: 0.2
-      })
-      
-      // Scale down slightly when dragging
-      gsap.to(currentModel.scale, {
-        x: Math.max(0.9, 1 - Math.abs(moveX) / 1000),
-        y: Math.max(0.9, 1 - Math.abs(moveX) / 1000),
-        z: Math.max(0.9, 1 - Math.abs(moveX) / 1000),
-        duration: 0.2
-      })
-    }
-  }
-  
-  const handleTouchEnd = (e: TouchEvent) => {
-    if (!isDragging) return
-    
-    isDragging = false
-    
-    // Reset rotation if not a significant swipe
-    if (currentModel) {
-      gsap.to(currentModel.rotation, {
-        z: 0,
-        duration: 0.3
-      })
-      // gsap.to(currentModel.scale, {
-      //   x: 1,
-      //   y: 1,
-      //   z: 1,
-      //   duration: 0.3
-      // })
-    }
-  }
-  
   onMount(() => {
     const cleanup = initThree()
   
@@ -206,9 +149,6 @@
 <div 
   class="model-container"
   bind:this={container}
-  on:touchstart={handleTouchStart}
-  on:touchmove={handleTouchMove}
-  on:touchend={handleTouchEnd}
 >
   {#if !isModelLoaded}
     <div class="absolute inset-0 flex flex-col items-center justify-center bg-primary-900 bg-opacity-70 z-10">
