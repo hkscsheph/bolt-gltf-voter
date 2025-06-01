@@ -125,11 +125,7 @@
         
         mixer = new THREE.AnimationMixer( gltf.scene );
         
-        let i = 0
-        timeInt = setInterval(() => {
-          mixer.clipAction( gltf.animations[i % gltf.animations.length] ).stop()
-          mixer.clipAction( gltf.animations[++i % gltf.animations.length] ).play();
-        }, 3000)
+        mixer.clipAction( gltf.animations[0]).play();
         
         // Animate model entrance
         gsap.from(currentModel.rotation, {
@@ -177,7 +173,9 @@
   
   <div class="absolute top-4 left-4 right-4 z-10 flex justify-between items-center">
     <div class="bg-primary-900 bg-opacity-80 backdrop-blur-sm px-4 py-2 rounded-lg">
-      <h2 class="font-bold text-white">{model.name}</h2>
+      <h2 class="font-bold text-white">
+        {model.name} 
+      </h2>
     </div>
   </div>
 </div>

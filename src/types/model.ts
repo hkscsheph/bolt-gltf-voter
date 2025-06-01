@@ -6,6 +6,7 @@ export interface Model {
   thumbnailUrl: string
   designer: string
   category: string
+  reference: string | null
 }
 
 export type Vote = 'like' | 'dislike' | 'skip'

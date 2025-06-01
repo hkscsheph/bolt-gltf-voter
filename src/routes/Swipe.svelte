@@ -41,7 +41,7 @@
 </script>
 
 <div class="relative h-screen bg-primary-900">
-  <Header title={currentModel.name} showBack={true} />
+  <Header title={currentModel.name} showBack={true} link={currentModel.reference} />
   
   <ModelViewer model={currentModel} />
   

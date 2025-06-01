@@ -3,6 +3,7 @@
   import { push } from 'svelte-spa-router'
   
   export let title = "ModelSwipe"
+  export let link = ''
   export let showProfile = true
   export let showBack = false
   
@@ -29,7 +30,12 @@
       </button>
     {/if}
     
-    <h1 class="text-xl font-bold text-white">{title}</h1>
+    <h1 class="text-xl font-bold text-white">
+      {title}
+      {#if link}
+        <a target="_blank" href={link}>(參考圖片)</a>
+      {/if}
+    </h1>
   </div>
   
   {#if showProfile && $user}
