@@ -32,7 +32,7 @@
     camera.position.set(0, 0, 5)
     
     // Lighting
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
+    const ambientLight = new THREE.AmbientLight(0xffffff, .9)
     scene.add(ambientLight)
     
     const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
@@ -181,19 +181,18 @@
         z: 0,
         duration: 0.3
       })
-      gsap.to(currentModel.scale, {
-        x: 1,
-        y: 1,
-        z: 1,
-        duration: 0.3
-      })
+      // gsap.to(currentModel.scale, {
+      //   x: 1,
+      //   y: 1,
+      //   z: 1,
+      //   duration: 0.3
+      // })
     }
   }
   
   onMount(() => {
     const cleanup = initThree()
-    // loadModel(model.url)
-    
+  
     return () => {
       cleanup()
     }
