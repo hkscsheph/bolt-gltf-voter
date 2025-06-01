@@ -135,7 +135,7 @@
         isModelLoaded = true
       },
       (progress) => {
-        loadingProgress = Math.floor((progress.loaded / progress.total) * 100)
+        loadingProgress = progress.total ? Math.floor((progress.loaded / progress.total) * 100) : 0
       },
       (error) => {
         console.error('Error loading model:', error)

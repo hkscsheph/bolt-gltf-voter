@@ -39,11 +39,26 @@ const modelData: Model[] = [
     designer: 'Chang Pui Ting',
     category: '哪吒'
   },
+  {
+    id: '2R04',
+    name: '刑天',
+    description: '刑天',
+    url: '/Cheng Ho Hin 2R04.gltf',
+    thumbnailUrl: '/Cheng Ho Hin 2R04.png',
+    designer: 'Cheng Ho Hin',
+    category: '刑天'
+  },
 ]
 
 export const models = writable<Model[]>(modelData)
 export const currentModelIndex = writable<number>(Math.floor(Math.random() * modelData.length))
 
 export const nextModel = () => {
-  currentModelIndex.update(n => Math.floor(Math.random() * modelData.length))
+  currentModelIndex.update(n => {
+    let nxt 
+    do {
+      nxt = Math.floor(Math.random() * modelData.length)
+    } while (n == nxt)
+    return nxt
+  })
 }
