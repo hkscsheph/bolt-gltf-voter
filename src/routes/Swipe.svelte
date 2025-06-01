@@ -28,14 +28,6 @@
     }
   }
   
-  const handleSwipe = (direction: 'left' | 'right') => {
-    if (direction === 'right') {
-      handleVote('like')
-    } else {
-      handleVote('dislike')
-    }
-  }
-  
   const handleLike = () => handleVote('like')
   const handleDislike = () => handleVote('dislike')
   const handleSkip = () => handleVote('skip')
@@ -47,7 +39,7 @@
 <div class="relative h-screen bg-primary-900">
   <Header title={currentModel.name} showBack={true} />
   
-  <ModelViewer model={currentModel} onSwipe={handleSwipe} />
+  <ModelViewer model={currentModel} />
   
   <SwipeButtons 
     onLike={handleLike}

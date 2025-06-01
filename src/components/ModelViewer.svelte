@@ -7,7 +7,6 @@
   import type { Model } from '../types/model'
   
   export let model: Model
-  export let onSwipe: (direction: 'left' | 'right') => void = () => {}
   
   let container: HTMLElement
   let scene: THREE.Scene
@@ -176,27 +175,18 @@
     
     isDragging = false
     
-    // Determine swipe direction
-    if (Math.abs(moveX) > 100) {
-      if (moveX > 0) {
-        onSwipe('right')
-      } else {
-        onSwipe('left')
-      }
-    } else {
-      // Reset rotation if not a significant swipe
-      if (currentModel) {
-        gsap.to(currentModel.rotation, {
-          z: 0,
-          duration: 0.3
-        })
-        gsap.to(currentModel.scale, {
-          x: 1,
-          y: 1,
-          z: 1,
-          duration: 0.3
-        })
-      }
+    // Reset rotation if not a significant swipe
+    if (currentModel) {
+      gsap.to(currentModel.rotation, {
+        z: 0,
+        duration: 0.3
+      })
+      gsap.to(currentModel.scale, {
+        x: 1,
+        y: 1,
+        z: 1,
+        duration: 0.3
+      })
     }
   }
   
