@@ -15,10 +15,13 @@
   let controls: OrbitControls
   let currentModel: THREE.Object3D | null = null
   let loadingProgress = 0
+  let mixer: THREE.AnimationMixer
   let isModelLoaded = false
+  let clock: THREE.Clock
   
   const initThree = () => {
     // Scene
+    clock = new THREE.Clock();
     scene = new THREE.Scene()
     scene.background = new THREE.Color(0x1e293b)
     
@@ -62,6 +65,7 @@
     const animate = () => {
       requestAnimationFrame(animate)
       controls.update()
+      mixer?.update( clock.getDelta() );
       
       if (currentModel) {
         currentModel.rotation.y += 0.002
@@ -114,6 +118,12 @@
         currentModel.position.z = -center.z * scale
         
         scene.add(currentModel)
+        
+        mixer = new THREE.AnimationMixer( gltf.scene );
+        
+        gltf.animations.forEach( ( clip ) => {
+            mixer.clipAction( clip ).play();
+        } );
         
         // Animate model entrance
         gsap.from(currentModel.rotation, {
