@@ -8,9 +8,12 @@
   import type { Vote } from '../types/model'
   
   let currentModel = $models[$currentModelIndex]
+  let voted = false
   
   const handleVote = async (vote: Vote) => {
+    if (voted) return
     try {
+      voted = true
       await submitVote({
         modelId: currentModel.id,
         vote
@@ -19,12 +22,13 @@
       // Move to next model
       nextModel()
       currentModel = $models[$currentModelIndex]
-      
+      voted = false
     } catch (error) {
       console.error('Error submitting vote:', error)
       // Still move to next model even if there's an error
       nextModel()
       currentModel = $models[$currentModelIndex]
+      voted = false
     }
   }
   
@@ -45,5 +49,6 @@
     onLike={handleLike}
     onDislike={handleDislike}
     onSkip={handleSkip}
+    voted={voted}
   />
 </div>
