@@ -1,0 +1,245 @@
+<script lang="ts">
+  import { onMount, onDestroy } from 'svelte'
+  import * as THREE from 'three'
+  import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+  import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+  import { gsap } from 'gsap'
+  import type { Model } from '../types/model'
+  
+  export let model: Model
+  export let onSwipe: (direction: 'left' | 'right') => void = () => {}
+  
+  let container: HTMLElement
+  let scene: THREE.Scene
+  let camera: THREE.PerspectiveCamera
+  let renderer: THREE.WebGLRenderer
+  let controls: OrbitControls
+  let currentModel: THREE.Object3D | null = null
+  let isDragging = false
+  let startX = 0
+  let startY = 0
+  let moveX = 0
+  let loadingProgress = 0
+  let isModelLoaded = false
+  
+  const initThree = () => {
+    // Scene
+    scene = new THREE.Scene()
+    scene.background = new THREE.Color(0x1e293b)
+    
+    // Camera
+    const aspectRatio = container.clientWidth / container.clientHeight
+    camera = new THREE.PerspectiveCamera(45, aspectRatio, 0.1, 1000)
+    camera.position.set(0, 0, 5)
+    
+    // Lighting
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
+    scene.add(ambientLight)
+    
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
+    directionalLight.position.set(1, 1, 1)
+    scene.add(directionalLight)
+    
+    // Renderer
+    renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
+    renderer.setSize(container.clientWidth, container.clientHeight)
+    renderer.setPixelRatio(window.devicePixelRatio)
+    renderer.outputColorSpace = THREE.SRGBColorSpace
+    container.appendChild(renderer.domElement)
+    
+    // Controls
+    controls = new OrbitControls(camera, renderer.domElement)
+    controls.enableDamping = true
+    controls.dampingFactor = 0.05
+    
+    // Handle resize
+    const handleResize = () => {
+      const width = container.clientWidth
+      const height = container.clientHeight
+      camera.aspect = width / height
+      camera.updateProjectionMatrix()
+      renderer.setSize(width, height)
+    }
+    
+    window.addEventListener('resize', handleResize)
+    
+    // Animation loop
+    const animate = () => {
+      requestAnimationFrame(animate)
+      controls.update()
+      
+      if (currentModel) {
+        currentModel.rotation.y += 0.002
+      }
+      
+      renderer.render(scene, camera)
+    }
+    
+    animate()
+    
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      if (renderer) {
+        renderer.dispose()
+      }
+      if (container.contains(renderer.domElement)) {
+        container.removeChild(renderer.domElement)
+      }
+    }
+  }
+  
+  const loadModel = (modelUrl: string) => {
+    isModelLoaded = false
+    loadingProgress = 0
+    
+    // Clear previous model
+    if (currentModel) {
+      scene.remove(currentModel)
+      currentModel = null
+    }
+    
+    const loader = new GLTFLoader()
+    
+    loader.load(
+      modelUrl,
+      (gltf) => {
+        currentModel = gltf.scene
+        
+        // Center and scale the model
+        const box = new THREE.Box3().setFromObject(currentModel)
+        const size = box.getSize(new THREE.Vector3())
+        const center = box.getCenter(new THREE.Vector3())
+        
+        const maxDim = Math.max(size.x, size.y, size.z)
+        const scale = 2 / maxDim
+        currentModel.scale.set(scale, scale, scale)
+        
+        currentModel.position.x = -center.x * scale
+        currentModel.position.y = -center.y * scale
+        currentModel.position.z = -center.z * scale
+        
+        scene.add(currentModel)
+        
+        // Animate model entrance
+        gsap.from(currentModel.rotation, {
+          y: -Math.PI / 2,
+          duration: 1,
+          ease: "power2.out"
+        })
+        
+        isModelLoaded = true
+      },
+      (progress) => {
+        loadingProgress = Math.floor((progress.loaded / progress.total) * 100)
+      },
+      (error) => {
+        console.error('Error loading model:', error)
+      }
+    )
+  }
+  
+  const handleTouchStart = (e: TouchEvent) => {
+    isDragging = true
+    startX = e.touches[0].clientX
+    startY = e.touches[0].clientY
+    moveX = 0
+  }
+  
+  const handleTouchMove = (e: TouchEvent) => {
+    if (!isDragging) return
+    
+    moveX = e.touches[0].clientX - startX
+    
+    // Apply rotation based on swipe
+    if (currentModel && Math.abs(moveX) > 10) {
+      currentModel.rotation.y = (moveX * 0.01)
+      
+      // Apply tilt effect
+      const tiltAmount = Math.min(Math.abs(moveX) / 200, 0.3)
+      gsap.to(currentModel.rotation, {
+        z: moveX > 0 ? tiltAmount : -tiltAmount,
+        duration: 0.2
+      })
+      
+      // Scale down slightly when dragging
+      gsap.to(currentModel.scale, {
+        x: Math.max(0.9, 1 - Math.abs(moveX) / 1000),
+        y: Math.max(0.9, 1 - Math.abs(moveX) / 1000),
+        z: Math.max(0.9, 1 - Math.abs(moveX) / 1000),
+        duration: 0.2
+      })
+    }
+  }
+  
+  const handleTouchEnd = (e: TouchEvent) => {
+    if (!isDragging) return
+    
+    isDragging = false
+    
+    // Determine swipe direction
+    if (Math.abs(moveX) > 100) {
+      if (moveX > 0) {
+        onSwipe('right')
+      } else {
+        onSwipe('left')
+      }
+    } else {
+      // Reset rotation if not a significant swipe
+      if (currentModel) {
+        gsap.to(currentModel.rotation, {
+          z: 0,
+          duration: 0.3
+        })
+        gsap.to(currentModel.scale, {
+          x: 1,
+          y: 1,
+          z: 1,
+          duration: 0.3
+        })
+      }
+    }
+  }
+  
+  onMount(() => {
+    const cleanup = initThree()
+    loadModel(model.url)
+    
+    return () => {
+      cleanup()
+    }
+  })
+  
+  $: if (model && scene) {
+    loadModel(model.url)
+  }
+</script>
+
+<div 
+  class="model-container"
+  bind:this={container}
+  on:touchstart={handleTouchStart}
+  on:touchmove={handleTouchMove}
+  on:touchend={handleTouchEnd}
+>
+  {#if !isModelLoaded}
+    <div class="absolute inset-0 flex flex-col items-center justify-center bg-primary-900 bg-opacity-70 z-10">
+      <div class="w-32 h-2 bg-primary-700 rounded-full overflow-hidden mb-4">
+        <div class="h-full bg-accent-500 transition-all duration-300" style="width: {loadingProgress}%"></div>
+      </div>
+      <p class="text-white">Loading {model.name}... {loadingProgress}%</p>
+    </div>
+  {/if}
+  
+  <div class="absolute top-4 left-4 right-4 z-10 flex justify-between items-center">
+    <div class="bg-primary-900 bg-opacity-80 backdrop-blur-sm px-4 py-2 rounded-lg">
+      <h2 class="font-bold text-white">{model.name}</h2>
+      <p class="text-sm text-primary-300">by {model.designer}</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .model-container {
+    touch-action: none;
+  }
+</style>
