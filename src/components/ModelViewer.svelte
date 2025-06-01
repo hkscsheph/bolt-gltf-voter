@@ -18,6 +18,7 @@
   let mixer: THREE.AnimationMixer
   let isModelLoaded = false
   let clock: THREE.Clock
+  let timeInt: any
   
   const initThree = () => {
     // Scene
@@ -84,6 +85,9 @@
       if (container.contains(renderer.domElement)) {
         container.removeChild(renderer.domElement)
       }
+      if (timeInt) {
+        clearInterval(timeInt)
+      }
     }
   }
   
@@ -121,9 +125,11 @@
         
         mixer = new THREE.AnimationMixer( gltf.scene );
         
-        gltf.animations.forEach( ( clip ) => {
-            mixer.clipAction( clip ).play();
-        } );
+        let i = 0
+        timeInt = setInterval(() => {
+          mixer.clipAction( gltf.animations[i % gltf.animations.length] ).stop()
+          mixer.clipAction( gltf.animations[++i % gltf.animations.length] ).play();
+        }, 3000)
         
         // Animate model entrance
         gsap.from(currentModel.rotation, {

@@ -93,6 +93,15 @@ const modelData: Model[] = [
     designer: 'Chui Cheuk Tung',
     category: '女媧'
   },
+  {
+    id: '2B04',
+    name: '哪吒',
+    description: '哪吒',
+    url: '/Chung Cheryl 2B04.gltf',
+    thumbnailUrl: '/Chung Cheryl 2B04.png',
+    designer: 'Chung Cheryl',
+    category: '哪吒'
+  },
 ]
 
 export const models = writable<Model[]>(modelData)
