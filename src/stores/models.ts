@@ -48,6 +48,51 @@ const modelData: Model[] = [
     designer: 'Cheng Ho Hin',
     category: '刑天'
   },
+  {
+    id: '2B01',
+    name: '哪吒',
+    description: '哪吒',
+    url: '/Cheng Tsz Ki 2B01.gltf',
+    thumbnailUrl: '/Cheng Tsz Ki 2B01.png',
+    designer: 'Cheng Tsz Ki',
+    category: '哪吒'
+  },
+  {
+    id: '2G03',
+    name: '哪吒',
+    description: '哪吒',
+    url: '/Cheung Ka Kiu Carly 2G03.gltf',
+    thumbnailUrl: '/Cheung Ka Kiu Carly 2G03.png',
+    designer: 'Cheung Ka Kiu Carly',
+    category: '哪吒'
+  },
+  {
+    id: '2B02',
+    name: '面具',
+    description: '面具',
+    url: '/Cheung Kai Long 2B02.gltf',
+    thumbnailUrl: '/Cheung Kai Long 2B02.png',
+    designer: 'Cheung Kai Long',
+    category: '面具'
+  },
+  {
+    id: '2B03',
+    name: '嫦娥',
+    description: '嫦娥',
+    url: '/Chu Pat Chin 2B03.gltf',
+    thumbnailUrl: '/Chu Pat Chin 2B03.png',
+    designer: 'Chu Pat Chin ',
+    category: '嫦娥'
+  },
+  {
+    id: '2R05',
+    name: '女媧',
+    description: '女媧',
+    url: '/Chui Cheuk Tung 2R05.gltf',
+    thumbnailUrl: '/Chui Cheuk Tung 2R05.png',
+    designer: 'Chui Cheuk Tung',
+    category: '女媧'
+  },
 ]
 
 export const models = writable<Model[]>(modelData)

@@ -17,7 +17,6 @@ export const submitVote = async (voteData: Omit<VoteData, 'userId' | 'userEmail'
       userEmail: currentUser.email,
       timestamp: Date.now()
     }
-    console.log(completeVoteData)
     
     const response = await fetch(APPS_SCRIPT_URL, {
       method: 'POST',
