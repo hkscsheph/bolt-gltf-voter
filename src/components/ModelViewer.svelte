@@ -28,14 +28,14 @@
     // Camera
     const aspectRatio = container.clientWidth / container.clientHeight
     camera = new THREE.PerspectiveCamera(45, aspectRatio, 0.1, 1000)
-    camera.position.set(0, 0, 5)
+    camera.position.set(0, 0, -5)
     
     // Lighting
     const ambientLight = new THREE.AmbientLight(0xffffff, .9)
     scene.add(ambientLight)
     
     const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
-    directionalLight.position.set(1, 1, 1)
+    directionalLight.position.set(1, 1, -1)
     scene.add(directionalLight)
     
     // Renderer
@@ -68,7 +68,7 @@
       mixer?.update( clock.getDelta() );
       
       if (currentModel) {
-        currentModel.rotation.y += 0.002
+        currentModel.rotation.y -= 0.002
       }
       
       renderer.render(scene, camera)
@@ -127,7 +127,7 @@
         
         // Animate model entrance
         gsap.from(currentModel.rotation, {
-          y: -Math.PI / 2,
+          y: Math.PI,
           duration: 1,
           ease: "power2.out"
         })
