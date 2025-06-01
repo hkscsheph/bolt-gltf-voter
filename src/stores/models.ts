@@ -4,23 +4,19 @@ import type { Model } from '../types/model'
 // Example model data
 const modelData: Model[] = [
   {
-    id: '2B03',
-    name: '仙女',
-    description: '仙女',
-    url: '/Chu Pat Chin.gltf',
-    thumbnailUrl: 'https://images.pexels.com/photos/1148955/pexels-photo-1148955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    designer: 'Chu Pat Chin',
-    category: '仙女'
+    id: '2G01',
+    name: '哪吒',
+    description: '哪吒',
+    url: '/Chan Chung Ching 2G01.gltf',
+    thumbnailUrl: '/Chan Chung Ching 2G01.png',
+    designer: 'Chan Chung Ching',
+    category: '哪吒'
   },
 ]
 
 export const models = writable<Model[]>(modelData)
-export const currentModelIndex = writable<number>(0)
+export const currentModelIndex = writable<number>(Math.floor(Math.random() * modelData.length))
 
 export const nextModel = () => {
-  currentModelIndex.update(n => (n + 1) % modelData.length)
-}
-
-export const prevModel = () => {
-  currentModelIndex.update(n => (n - 1 + modelData.length) % modelData.length)
+  currentModelIndex.update(n => Math.floor(Math.random() * modelData.length))
 }
