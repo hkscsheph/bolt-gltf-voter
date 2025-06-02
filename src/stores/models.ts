@@ -28,7 +28,7 @@ const modelData: Model[] = [
     name: '哪吒',
     description: '哪吒',
     url: '/Chan Yau Ching 2R02.gltf',
-    reference: null,
+    reference: '/Chan Yau Ching 2R02.jpg',
     thumbnailUrl: '/Chan Yau Ching 2R02.png',
     designer: 'Chan Yau Ching',
     category: '哪吒'
@@ -38,7 +38,7 @@ const modelData: Model[] = [
     name: '哪吒',
     description: '哪吒',
     url: '/Chang Pui Ting 2R03.gltf',
-    reference: null,
+    reference: '/Chang Pui Ting 2R03.jpg',
     thumbnailUrl: '/Chang Pui Ting 2R03.png',
     designer: 'Chang Pui Ting',
     category: '哪吒'
@@ -48,7 +48,7 @@ const modelData: Model[] = [
     name: '刑天',
     description: '刑天',
     url: '/Cheng Ho Hin 2R04.gltf',
-    reference: null,
+    reference: 'Cheng Ho Hin 2R04.jpg',
     thumbnailUrl: '/Cheng Ho Hin 2R04.png',
     designer: 'Cheng Ho Hin',
     category: '刑天'
@@ -58,7 +58,7 @@ const modelData: Model[] = [
     name: '哪吒',
     description: '哪吒',
     url: '/Cheng Tsz Ki 2B01.gltf',
-    reference: null,
+    reference: '/Chan Yau Ching 2R02.jpg',
     thumbnailUrl: '/Cheng Tsz Ki 2B01.png',
     designer: 'Cheng Tsz Ki',
     category: '哪吒'
@@ -88,7 +88,7 @@ const modelData: Model[] = [
     name: '嫦娥',
     description: '嫦娥',
     url: '/Chu Pat Chin 2B03.gltf',
-    reference: null,
+    reference: '/Chu Pat Chin 2B03.jpg',
     thumbnailUrl: '/Chu Pat Chin 2B03.png',
     designer: 'Chu Pat Chin',
     category: '嫦娥'
@@ -98,7 +98,7 @@ const modelData: Model[] = [
     name: '女媧',
     description: '女媧',
     url: '/Chui Cheuk Tung 2R05.gltf',
-    reference: null,
+    reference: '/Chui Cheuk Tung 2R05.jpg',
     thumbnailUrl: '/Chui Cheuk Tung 2R05.png',
     designer: 'Chui Cheuk Tung',
     category: '女媧'
@@ -118,7 +118,7 @@ const modelData: Model[] = [
     name: '孫悟空',
     description: '孫悟空',
     url: '/Chung Keith 2G05.gltf',
-    reference: null,
+    reference: '/Chung Keith 2G05.jpg',
     thumbnailUrl: '/Chung Keith 2G05.png',
     designer: 'Chung Keith',
     category: '孫悟空'
@@ -128,7 +128,7 @@ const modelData: Model[] = [
     name: '財神',
     description: '財神',
     url: '/Ho Wing Hei 2R06.gltf',
-    reference: null,
+    reference: '/Ho Wing Hei 2R06.jpg',
     thumbnailUrl: '/Ho Wing Hei 2R06.png',
     designer: 'Ho Wing Hei',
     category: '財神'
@@ -148,7 +148,7 @@ const modelData: Model[] = [
     name: '媽祖',
     description: '媽祖',
     url: '/Lam Tung Yan 2R07.gltf',
-    reference: null,
+    reference: '/Lam Tung Yan 2R07.jpg',
     thumbnailUrl: '/Lam Tung Yan 2R07.png',
     designer: 'Lam Tung Yan',
     category: '媽祖'
@@ -158,7 +158,7 @@ const modelData: Model[] = [
     name: '觀音',
     description: '觀音',
     url: '/Lau Qian Yu Casey 2B06.gltf',
-    reference: null,
+    reference: '/Lau Qian Yu Casey 2B06.jpg',
     thumbnailUrl: '/Lau Qian Yu Casey 2B06.png',
     designer: 'Lau Qian Yu Casey',
     category: '觀音'
@@ -178,7 +178,7 @@ const modelData: Model[] = [
     name: '哪吒',
     description: '哪吒',
     url: '/Lee Yuet Hei Allison 2B08.gltf',
-    reference: null,
+    reference: '/Lee Yuet Hei Allison 2B08.jpg',
     thumbnailUrl: '/Lee Yuet Hei Allison 2B08.png',
     designer: 'Lee Yuet Hei Allison',
     category: '哪吒'
@@ -208,7 +208,7 @@ const modelData: Model[] = [
     name: '嫦娥',
     description: '嫦娥',
     url: '/Liu Sophie 2B10.gltf',
-    reference: null,
+    reference: '/Liu Sophie 2B10.jpg',
     thumbnailUrl: '/Liu Sophie 2B10.png',
     designer: 'Liu Sophie',
     category: '嫦娥'
@@ -218,7 +218,7 @@ const modelData: Model[] = [
     name: '唐三藏',
     description: '唐三藏',
     url: '/Lo Julie Wing Ching 2B11.gltf',
-    reference: null,
+    reference: '/Lo Julie Wing Ching 2B11.jpg',
     thumbnailUrl: '/Lo Julie Wing Ching 2B11.png',
     designer: 'Lo Julie Wing Ching',
     category: '唐三藏'
@@ -238,7 +238,7 @@ const modelData: Model[] = [
     name: '哪吒',
     description: '哪吒',
     url: '/Mak Chi Ching 2B13.gltf',
-    reference: null,
+    reference: '/Mak Chi Ching 2B13.jpg',
     thumbnailUrl: '/Mak Chi Ching 2B13.png',
     designer: 'Mak Chi Ching',
     category: '哪吒'
@@ -254,21 +254,11 @@ const modelData: Model[] = [
     category: '女人'
   },
   {
-    id: '2R10',
-    name: '渾沌',
-    description: '渾沌',
-    url: '/Meng Wong Hei 2R10.gltf',
-    reference: null,
-    thumbnailUrl: '/Meng Wong Hei 2R10.png',
-    designer: 'Meng Wong Hei',
-    category: '渾沌'
-  },
-  {
     id: '2G09',
     name: '悟空',
     description: '悟空',
     url: '/Mok Chun Hei 2G09.gltf',
-    reference: null,
+    reference: '/Mok Chun Hei 2G09.jpg',
     thumbnailUrl: '/Mok Chun Hei 2G09.png',
     designer: 'Mok Chun Hei',
     category: '悟空'
@@ -334,16 +324,6 @@ const modelData: Model[] = [
     category: '唐三藏'
   },
   {
-    id: '2B15',
-    name: '哪吒',
-    description: '哪吒',
-    url: '/Tsang Kai Ho 2B15.gltf',
-    reference: null,
-    thumbnailUrl: '/Tsang Kai Ho 2B15.png',
-    designer: 'Tsang Kai Ho',
-    category: '哪吒'
-  },
-  {
     id: '2G14',
     name: '女人',
     description: '女人',
@@ -355,13 +335,13 @@ const modelData: Model[] = [
   },
   {
     id: '2B16',
-    name: '怪人',
-    description: '怪人',
+    name: '修女',
+    description: '修女',
     url: '/Tse Wai Cheng 2B16.gltf',
-    reference: null,
+    reference: '/Tse Wai Cheng 2B16.jpg',
     thumbnailUrl: '/Tse Wai Cheng 2B16.png',
     designer: 'Tse Wai Cheng',
-    category: '怪人'
+    category: '修女'
   },
   {
     id: '2R14',
@@ -543,11 +523,51 @@ const modelData: Model[] = [
     designer: 'Zhou Ching Hin Angus',
     category: '孫悟空'
   },
+  {
+    id: '2B24',
+    name: '孫悟空',
+    description: '孫悟空',
+    url: '/Yu Hei Yiu 2B24.gltf',
+    reference: null,
+    thumbnailUrl: '/Yu Hei Yiu 2B24.png',
+    designer: 'Yu Hei Yiu',
+    category: '孫悟空'
+  },
+  {
+    id: '2B22',
+    name: '孫悟空',
+    description: '孫悟空',
+    url: '/Yu Chun Lok 2B22.gltf',
+    reference: null,
+    thumbnailUrl: '/Yu Chun Lok 2B22.png',
+    designer: 'Yu Chun Lok',
+    category: '孫悟空'
+  },
+  {
+    id: '2R10',
+    name: '渾沌',
+    description: '渾沌',
+    url: '/Meng Wong Hei 2R10.gltf',
+    reference: '/Meng Wong Hei 2R10.jpg',
+    thumbnailUrl: '/Meng Wong Hei 2R10.png',
+    designer: 'Meng Wong Hei',
+    category: '渾沌'
+  },
+  {
+    id: '2B15',
+    name: '哪吒',
+    description: '哪吒',
+    url: '/Tsang Kai Ho 2B15.gltf',
+    reference: null,
+    thumbnailUrl: '/Tsang Kai Ho 2B15.png',
+    designer: 'Tsang Kai Ho',
+    category: '哪吒'
+  },
 ]
 
 export const models = writable<Model[]>(modelData)
-export const currentModelIndex = writable<number>(Math.floor(Math.random() * modelData.length))
-// export const currentModelIndex = writable<number>(modelData.length-2)
+// export const currentModelIndex = writable<number>(Math.floor(Math.random() * modelData.length))
+export const currentModelIndex = writable<number>(modelData.length-1)
 
 export const nextModel = () => {
   currentModelIndex.update(n => {
