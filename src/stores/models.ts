@@ -4,6 +4,16 @@ import type { Model } from '../types/model'
 // Example model data
 const modelData: Model[] = [
   {
+    id: '2R12',
+    name: '關公',
+    description: '關公',
+    url: '/Sze Hei Man 2R12.gltf',
+    reference: '/Sze Hei Man 2R12.jpg',
+    thumbnailUrl: '/Sze Hei Man 2R12.png',
+    designer: 'Sze Hei Man',
+    category: '關公'
+  },
+  {
     id: '2R18',
     name: '孫悟空',
     description: '孫悟空',
