@@ -596,8 +596,8 @@ const modelData: Model[] = [
 ]
 
 export const models = writable<Model[]>(modelData)
-// export const currentModelIndex = writable<number>(Math.floor(Math.random() * modelData.length))
-export const currentModelIndex = writable<number>(modelData.length-1)
+export const currentModelIndex = writable<number>(Math.floor(Math.random() * modelData.length))
+// export const currentModelIndex = writable<number>(modelData.length-1)
 
 export const nextModel = () => {
   currentModelIndex.update(n => {
