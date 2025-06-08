@@ -275,13 +275,13 @@ const modelData: Model[] = [
   },
   {
     id: '2G08',
-    name: '女人',
-    description: '女人',
+    name: '女媧',
+    description: '女媧',
     url: '/Man Wing Hei Jessy May 2G08.gltf',
-    reference: null,
+    reference: '/Man Wing Hei Jessy May 2G08.jpg',
     thumbnailUrl: '/Man Wing Hei Jessy May 2G08.png',
     designer: 'Man Wing Hei Jessy May',
-    category: '女人'
+    category: '女媧'
   },
   {
     id: '2G09',
