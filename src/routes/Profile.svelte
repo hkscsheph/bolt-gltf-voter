@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { user } from '../stores/auth';
+  import { models, currentModelIndex } from '../stores/models';
   import { signOut } from '../services/auth';
   import { push } from 'svelte-spa-router';
   import Header from '../components/Header.svelte';
@@ -8,8 +9,10 @@
   import axios from 'axios';
 
   let isLoading = false;
+  let isSigningOut = false;
   let error = '';
   let stats = { liked: 0, disliked: 0, skipped: 0 };
+  let lastModelId = '';
 
   const API_URL = 'https://script.google.com/macros/s/AKfycbymlVWpIe8yWqTOWJMw2MPUIHlc6xXcrLojSku_WHoPhb9jsfQyWENOYCM6VwiD0Ry2/exec'; // Replace with your deployed Google Apps Script web app URL
 
@@ -22,6 +25,7 @@
       stats.liked = userData.like || 0;
       stats.disliked = userData.dislike || 0;
       stats.skipped = userData.skip || 0;
+      lastModelId = userData.last || '';
     } catch (e) {
       error = 'Failed to load vote stats. Please try again.';
       console.error(e);
@@ -31,7 +35,7 @@
   }
 
   const handleSignOut = async () => {
-    isLoading = true;
+    isSigningOut = true;
     try {
       await signOut();
       push('/login');
@@ -39,8 +43,18 @@
       error = 'Failed to sign out. Please try again.';
       console.error(e);
     } finally {
-      isLoading = false;
+      isSigningOut = false;
     }
+  };
+
+  const handleLastModel = () => {
+    if (lastModelId) {
+      const index = $models.findIndex(model => model.id === lastModelId);
+      if (index !== -1) {
+        currentModelIndex.set(index);
+      }
+    }
+    push('/swipe');
   };
 
   onMount(() => {
@@ -97,6 +111,16 @@
             </div>
           </div>
         {/if}
+        {#if lastModelId}
+          <div class="mt-4 text-center">
+            <button
+              on:click={handleLastModel}
+              class="bg-accent-500 hover:bg-accent-600 text-white py-2 px-4 rounded-lg transition-colors"
+            >
+              View Last Like
+            </button>
+          </div>
+        {/if}
       </div>
 
       <div class="animate-in">
@@ -107,10 +131,10 @@
         {/if}
         <button
           on:click={handleSignOut}
-          disabled={isLoading}
+          disabled={isSigningOut}
           class="w-full bg-primary-800 hover:bg-primary-700 text-white font-medium py-3 px-4 rounded-lg transition-colors"
         >
-          {#if isLoading}
+          {#if isSigningOut}
             <div class="inline-block animate-spin h-5 w-5 border-t-2 border-b-2 border-white rounded-full mr-2"></div>
             Signing out...
           {:else}
