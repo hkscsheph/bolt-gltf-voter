@@ -6,23 +6,16 @@
 
 function doPost(e) {
   try {
-    // Parse the incoming JSON data
     const data = JSON.parse(e.postData.contents);
-    
-    // Access the active spreadsheet
     const ss = SpreadsheetApp.getActiveSpreadsheet();
     const sheet = ss.getSheetByName('Votes') || ss.insertSheet('Votes');
-    
-    // Ensure headers exist
     const headers = ['modelId', 'userId', 'userEmail', 'vote', 'timestamp'];
     const firstRow = sheet.getRange(1, 1, 1, headers.length).getValues()[0];
     
-    // Add headers if they don't exist
     if (firstRow.join('') === '') {
       sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
     }
     
-    // Prepare the data row
     const rowData = [
       data.modelId,
       data.userId,
@@ -31,17 +24,13 @@ function doPost(e) {
       new Date(data.timestamp)
     ];
     
-    // Append the data to the sheet
     sheet.appendRow(rowData);
     
-    // Return success
     return ContentService.createTextOutput(JSON.stringify({
       status: 'success',
       message: 'Vote recorded successfully'
     })).setMimeType(ContentService.MimeType.JSON);
-    
   } catch (error) {
-    // Return error
     return ContentService.createTextOutput(JSON.stringify({
       status: 'error',
       message: error.toString()
@@ -50,8 +39,35 @@ function doPost(e) {
 }
 
 function doGet() {
-  return ContentService.createTextOutput(JSON.stringify({
-    status: 'success',
-    message: 'The API is working.'
-  })).setMimeType(ContentService.MimeType.JSON);
+  try {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = ss.getSheetByName('Voter');
+    if (!sheet) {
+      return ContentService.createTextOutput(JSON.stringify({
+        status: 'error',
+        message: 'Votes sheet not found'
+      })).setMimeType(ContentService.MimeType.JSON);
+    }
+    
+    const data = sheet.getDataRange().getValues();
+    const headers = data[0];
+    const rows = data.slice(1).map(row => {
+      let rowData = {};
+      headers.forEach((header, index) => {
+        rowData[header] = row[index];
+      });
+      return rowData;
+    });
+    
+    return ContentService.createTextOutput(JSON.stringify({
+      status: 'success',
+      message: 'Data retrieved successfully',
+      data: rows
+    })).setMimeType(ContentService.MimeType.JSON);
+  } catch (error) {
+    return ContentService.createTextOutput(JSON.stringify({
+      status: 'error',
+      message: error.toString()
+    })).setMimeType(ContentService.MimeType.JSON);
+  }
 }
