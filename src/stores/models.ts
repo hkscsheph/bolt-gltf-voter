@@ -4,7 +4,7 @@ import type { Model } from '../types/model'
 // Example model data
 const modelData: Model[] = [
   {
-    id: '2G06',
+    id: '2G06_2425',
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Ho Cheuk Lam 2G06.gltf',
@@ -14,7 +14,7 @@ const modelData: Model[] = [
     category: '哪吒'
   },
   {
-    id: '2R12',
+    id: '2R12_2425',
     name: '關公',
     description: '關公',
     url: '/2425/Sze Hei Man 2R12.gltf',
@@ -24,7 +24,7 @@ const modelData: Model[] = [
     category: '關公'
   },
   {
-    id: '2R18',
+    id: '2R18_2425',
     name: '孫悟空',
     description: '孫悟空',
     url: '/2425/Yeung Ho Lai Conrad 2R18.gltf',
@@ -34,7 +34,7 @@ const modelData: Model[] = [
     category: '孫悟空'
   },
   {
-    id: '2R09',
+    id: '2R09_2425',
     name: '仙女',
     description: '仙女',
     url: '/2425/Loo Yui Chi 2R09.gltf',
@@ -44,7 +44,7 @@ const modelData: Model[] = [
     category: '仙女'
   },
   {
-    id: '2G01',
+    id: '2G01_2425',
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Chan Chung Ching 2G01.gltf',
@@ -54,7 +54,7 @@ const modelData: Model[] = [
     category: '哪吒'
   },
   {
-    id: '2R01',
+    id: '2R01_2425',
     name: '牛魔王',
     description: '牛魔王',
     url: '/2425/Chan Long Him 2R01.gltf',
@@ -64,7 +64,7 @@ const modelData: Model[] = [
     category: '牛魔王'
   },
   {
-    id: '2R02',
+    id: '2R02_2425',
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Chan Yau Ching 2R02.gltf',
@@ -74,7 +74,7 @@ const modelData: Model[] = [
     category: '哪吒'
   },
   {
-    id: '2R03',
+    id: '2R03_2425',
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Chang Pui Ting 2R03.gltf',
@@ -84,7 +84,7 @@ const modelData: Model[] = [
     category: '哪吒'
   },
   {
-    id: '2R04',
+    id: '2R04_2425',
     name: '刑天',
     description: '刑天',
     url: '/2425/Cheng Ho Hin 2R04.gltf',
@@ -94,7 +94,7 @@ const modelData: Model[] = [
     category: '刑天'
   },
   {
-    id: '2B01',
+    id: '2B01_2425',
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Cheng Tsz Ki 2B01.gltf',
@@ -104,7 +104,7 @@ const modelData: Model[] = [
     category: '哪吒'
   },
   {
-    id: '2G03',
+    id: '2G03_2425',
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Cheung Ka Kiu Carly 2G03.gltf',
@@ -114,7 +114,7 @@ const modelData: Model[] = [
     category: '哪吒'
   },
   {
-    id: '2B02',
+    id: '2B02_2425',
     name: '怪人',
     description: '怪人',
     url: '/2425/Cheung Kai Long 2B02.gltf',
@@ -124,7 +124,7 @@ const modelData: Model[] = [
     category: '怪人'
   },
   {
-    id: '2B03',
+    id: '2B03_2425',
     name: '嫦娥',
     description: '嫦娥',
     url: '/2425/Chu Pat Chin 2B03.gltf',
@@ -134,7 +134,7 @@ const modelData: Model[] = [
     category: '嫦娥'
   },
   {
-    id: '2R05',
+    id: '2R05_2425',
     name: '女媧',
     description: '女媧',
     url: '/2425/Chui Cheuk Tung 2R05.gltf',
@@ -144,7 +144,7 @@ const modelData: Model[] = [
     category: '女媧'
   },
   {
-    id: '2B04',
+    id: '2B04_2425',
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Chung Cheryl 2B04.gltf',
@@ -154,7 +154,7 @@ const modelData: Model[] = [
     category: '哪吒'
   },
   {
-    id: '2G05',
+    id: '2G05_2425',
     name: '孫悟空',
     description: '孫悟空',
     url: '/2425/Chung Keith 2G05.gltf',
@@ -164,7 +164,7 @@ const modelData: Model[] = [
     category: '孫悟空'
   },
   {
-    id: '2R06',
+    id: '2R06_2425',
     name: '財神',
     description: '財神',
     url: '/2425/Ho Wing Hei 2R06.gltf',
@@ -174,7 +174,7 @@ const modelData: Model[] = [
     category: '財神'
   },
   {
-    id: '2B05',
+    id: '2B05_2425',
     name: '凡人',
     description: '凡人',
     url: '/2425/Hooi Arus Sz Wun 2B05.gltf',
@@ -184,7 +184,7 @@ const modelData: Model[] = [
     category: '凡人'
   },
   {
-    id: '2R07',
+    id: '2R07_2425',
     name: '媽祖',
     description: '媽祖',
     url: '/2425/Lam Tung Yan 2R07.gltf',
@@ -194,7 +194,7 @@ const modelData: Model[] = [
     category: '媽祖'
   },
   {
-    id: '2B06',
+    id: '2B06_2425',
     name: '觀音',
     description: '觀音',
     url: '/2425/Lau Qian Yu Casey 2B06.gltf',
@@ -204,7 +204,7 @@ const modelData: Model[] = [
     category: '觀音'
   },
   {
-    id: '2B07',
+    id: '2B07_2425',
     name: '忍者',
     description: '忍者',
     url: '/2425/Lee Tze Yun 2B07.gltf',
@@ -214,7 +214,7 @@ const modelData: Model[] = [
     category: '忍者'
   },
   {
-    id: '2B08',
+    id: '2B08_2425',
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Lee Yuet Hei Allison 2B08.gltf',
@@ -224,7 +224,7 @@ const modelData: Model[] = [
     category: '哪吒'
   },
   {
-    id: '2R08',
+    id: '2R08_2425',
     name: '東海龍王',
     description: '東海龍王',
     url: '/2425/Leung Beavis 2R08.gltf',
@@ -234,7 +234,7 @@ const modelData: Model[] = [
     category: '東海龍王'
   },
   {
-    id: '2B09',
+    id: '2B09_2425',
     name: '孫悟空',
     description: '孫悟空',
     url: '/2425/Lin Ling Yan 2B09.gltf',
@@ -244,7 +244,7 @@ const modelData: Model[] = [
     category: '孫悟空'
   },
   {
-    id: '2B10',
+    id: '2B10_2425',
     name: '嫦娥',
     description: '嫦娥',
     url: '/2425/Liu Sophie 2B10.gltf',
@@ -254,7 +254,7 @@ const modelData: Model[] = [
     category: '嫦娥'
   },
   {
-    id: '2B11',
+    id: '2B11_2425',
     name: '唐三藏',
     description: '唐三藏',
     url: '/2425/Lo Julie Wing Ching 2B11.gltf',
@@ -264,7 +264,7 @@ const modelData: Model[] = [
     category: '唐三藏'
   },
   {
-    id: '2B12',
+    id: '2B12_2425',
     name: '孫悟空',
     description: '孫悟空',
     url: '/2425/Maggio Emanuela Tsz Yu 2B12.gltf',
@@ -274,7 +274,7 @@ const modelData: Model[] = [
     category: '孫悟空'
   },
   {
-    id: '2B13',
+    id: '2B13_2425',
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Mak Chi Ching 2B13.gltf',
@@ -284,7 +284,7 @@ const modelData: Model[] = [
     category: '哪吒'
   },
   {
-    id: '2G08',
+    id: '2G08_2425',
     name: '女媧',
     description: '女媧',
     url: '/2425/Man Wing Hei Jessy May 2G08.gltf',
@@ -294,7 +294,7 @@ const modelData: Model[] = [
     category: '女媧'
   },
   {
-    id: '2G09',
+    id: '2G09_2425',
     name: '悟空',
     description: '悟空',
     url: '/2425/Mok Chun Hei 2G09.gltf',
@@ -304,7 +304,7 @@ const modelData: Model[] = [
     category: '悟空'
   },
   {
-    id: '2G10',
+    id: '2G10_2425',
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Mok Tsz Man 2G10.gltf',
@@ -314,7 +314,7 @@ const modelData: Model[] = [
     category: '哪吒'
   },
   {
-    id: '2R11',
+    id: '2R11_2425',
     name: '孫悟空',
     description: '孫悟空',
     url: '/2425/Shek Man Sik 2R11.gltf',
@@ -324,7 +324,7 @@ const modelData: Model[] = [
     category: '孫悟空'
   },
   {
-    id: '2G11',
+    id: '2G11_2425',
     name: '敖丙',
     description: '敖丙',
     url: '/2425/So Fei Sophia 2G11.gltf',
@@ -334,7 +334,7 @@ const modelData: Model[] = [
     category: '敖丙'
   },
   {
-    id: '2B14',
+    id: '2B14_2425',
     name: '忍者',
     description: '忍者',
     url: '/2425/Tang Chit Yu 2B14.gltf',
@@ -344,7 +344,7 @@ const modelData: Model[] = [
     category: '忍者'
   },
   {
-    id: '2G13',
+    id: '2G13_2425',
     name: '唐三藏',
     description: '唐三藏',
     url: '/2425/Tong Kai Shun 2G13.gltf',
@@ -354,7 +354,7 @@ const modelData: Model[] = [
     category: '唐三藏'
   },
   {
-    id: '2R13',
+    id: '2R13_2425',
     name: '唐三藏',
     description: '唐三藏',
     url: '/2425/Tong Kin Wing 2R13.gltf',
@@ -364,7 +364,7 @@ const modelData: Model[] = [
     category: '唐三藏'
   },
   {
-    id: '2G14',
+    id: '2G14_2425',
     name: '女人',
     description: '女人',
     url: '/2425/Tse Hoi Tung 2G14.gltf',
@@ -374,7 +374,7 @@ const modelData: Model[] = [
     category: '女人'
   },
   {
-    id: '2B16',
+    id: '2B16_2425',
     name: '修女',
     description: '修女',
     url: '/2425/Tse Wai Cheng 2B16.gltf',
@@ -384,7 +384,7 @@ const modelData: Model[] = [
     category: '修女'
   },
   {
-    id: '2R14',
+    id: '2R14_2425',
     name: '怪人',
     description: '怪人',
     url: '/2425/Tse Yu Ki 2R14.gltf',
@@ -394,7 +394,7 @@ const modelData: Model[] = [
     category: '怪人'
   },
   {
-    id: '2B17',
+    id: '2B17_2425',
     name: '玉皇大帝',
     description: '玉皇大帝',
     url: '/2425/Tse Yu Yan 2B17.gltf',
@@ -404,7 +404,7 @@ const modelData: Model[] = [
     category: '玉皇大帝'
   },
   {
-    id: '2G15',
+    id: '2G15_2425',
     name: '骷髏兵',
     description: '骷髏兵',
     url: '/2425/Wong Chi Yin 2G15.gltf',
@@ -414,7 +414,7 @@ const modelData: Model[] = [
     category: '骷髏兵'
   },
   {
-    id: '2R15',
+    id: '2R15_2425',
     name: '和尚',
     description: '和尚',
     url: '/2425/Wong Chor Wing 2R15.gltf',
@@ -424,7 +424,7 @@ const modelData: Model[] = [
     category: '和尚'
   },
   {
-    id: '2R16',
+    id: '2R16_2425',
     name: '諸葛孔明',
     description: '諸葛孔明',
     url: '/2425/Wong Miu 2R16.gltf',
@@ -434,7 +434,7 @@ const modelData: Model[] = [
     category: '諸葛孔明'
   },
   {
-    id: '2B18',
+    id: '2B18_2425',
     name: '銀角',
     description: '銀角',
     url: '/2425/Wong Nozomi 2B18.gltf',
@@ -444,7 +444,7 @@ const modelData: Model[] = [
     category: '銀角'
   },
   {
-    id: '2G22',
+    id: '2G22_2425',
     name: '仙女',
     description: '仙女',
     url: '/2425/Wong Oi Kiu 2G22.gltf',
@@ -454,7 +454,7 @@ const modelData: Model[] = [
     category: '仙女'
   },
   {
-    id: '2R17',
+    id: '2R17_2425',
     name: '戰神呂布',
     description: '戰神呂布',
     url: '/2425/Wong Yin Nam 2R17.gltf',
@@ -464,7 +464,7 @@ const modelData: Model[] = [
     category: '戰神呂布'
   },
   {
-    id: '2B19',
+    id: '2B19_2425',
     name: '孫悟空',
     description: '孫悟空',
     url: '/2425/Yeung Joreson 2B19.gltf',
@@ -474,7 +474,7 @@ const modelData: Model[] = [
     category: '孫悟空'
   },
   {
-    id: '2B20',
+    id: '2B20_2425',
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Yeung Ngai Tung 2B20.gltf',
@@ -484,7 +484,7 @@ const modelData: Model[] = [
     category: '哪吒'
   },
   {
-    id: '2G17',
+    id: '2G17_2425',
     name: '美杜莎',
     description: '美杜莎',
     url: '/2425/Yeung Tsz Yau 2G17.gltf',
@@ -494,7 +494,7 @@ const modelData: Model[] = [
     category: '美杜莎'
   },
   {
-    id: '2G18',
+    id: '2G18_2425',
     name: '門神',
     description: '門神',
     url: '/2425/Yip Dick Yar Naddy 2G18.gltf',
@@ -504,7 +504,7 @@ const modelData: Model[] = [
     category: '門神'
   },
   {
-    id: '2G19',
+    id: '2G19_2425',
     name: '女人',
     description: '女人',
     url: '/2425/Yip Macy Chung Kiu 2G19.gltf',
@@ -514,7 +514,7 @@ const modelData: Model[] = [
     category: '女人'
   },
   {
-    id: '2B21',
+    id: '2B21_2425',
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Yiu Sze Nga 2B21.gltf',
@@ -524,7 +524,7 @@ const modelData: Model[] = [
     category: '哪吒'
   },
   {
-    id: '2B23',
+    id: '2B23_2425',
     name: '豬八戒',
     description: '豬八戒',
     url: '/2425/Yuen Cheuk Ling 2B23.gltf',
@@ -534,7 +534,7 @@ const modelData: Model[] = [
     category: '豬八戒'
   },
   {
-    id: '2G21',
+    id: '2G21_2425',
     name: '守財奴',
     description: '守財奴',
     url: '/2425/Yuen Ching Hin 2G21.gltf',
@@ -544,7 +544,7 @@ const modelData: Model[] = [
     category: '守財奴'
   },
   {
-    id: '2R19',
+    id: '2R19_2425',
     name: '老鼠精',
     description: '老鼠精',
     url: '/2425/Yung Ho Muhammad Numan 2R19.gltf',
@@ -554,7 +554,7 @@ const modelData: Model[] = [
     category: '老鼠精'
   },
   {
-    id: '2R20',
+    id: '2R20_2425',
     name: '孫悟空',
     description: '孫悟空',
     url: '/2425/Zhou Ching Hin Angus 2R20.gltf',
@@ -564,7 +564,7 @@ const modelData: Model[] = [
     category: '孫悟空'
   },
   {
-    id: '2B24',
+    id: '2B24_2425',
     name: '孫悟空',
     description: '孫悟空',
     url: '/2425/Yu Hei Yiu 2B24.gltf',
@@ -574,7 +574,7 @@ const modelData: Model[] = [
     category: '孫悟空'
   },
   {
-    id: '2B22',
+    id: '2B22_2425',
     name: '孫悟空',
     description: '孫悟空',
     url: '/2425/Yu Chun Lok 2B22.gltf',
@@ -584,7 +584,7 @@ const modelData: Model[] = [
     category: '孫悟空'
   },
   {
-    id: '2R10',
+    id: '2R10_2425',
     name: '渾沌',
     description: '渾沌',
     url: '/2425/Meng Wong Hei 2R10.gltf',
@@ -594,7 +594,7 @@ const modelData: Model[] = [
     category: '渾沌'
   },
   {
-    id: '2B15',
+    id: '2B15_2425',
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Tsang Kai Ho 2B15.gltf',
@@ -866,16 +866,58 @@ const modelData: Model[] = [
   },
 ]
 
+// Year filter store
+export const selectedYear = writable<string>('2526') // Default to 2526
+
+// Filtered models based on selected year
+export const filteredModels = writable<Model[]>([])
+
+// All models store
 export const models = writable<Model[]>(modelData)
-export const currentModelIndex = writable<number>(Math.floor(Math.random() * modelData.length))
-// export const currentModelIndex = writable<number>(modelData.length-1)
+
+// Current model index for filtered models
+export const currentModelIndex = writable<number>(0)
+
+// Initialize filtered models
+const updateFilteredModels = (year: string) => {
+  let filtered: Model[]
+  if (year === 'all') {
+    filtered = modelData
+  } else {
+    // Filter by year - 2526 models have "_2526" suffix, 2425 models don't
+    if (year === '2526') {
+      filtered = modelData.filter(model => model.id.includes('_2526'))
+    } else if (year === '2425') {
+      filtered = modelData.filter(model => !model.id.includes('_2526'))
+    } else {
+      filtered = modelData
+    }
+  }
+  
+  filteredModels.set(filtered)
+  
+  // Reset to first model when filter changes
+  if (filtered.length > 0) {
+    currentModelIndex.set(Math.floor(Math.random() * filtered.length))
+  }
+}
+
+// Subscribe to year changes and update filtered models
+selectedYear.subscribe(updateFilteredModels)
+
+// Initialize with default year
+updateFilteredModels('2526')
 
 export const nextModel = () => {
-  currentModelIndex.update(n => {
-    let nxt 
-    do {
-      nxt = Math.floor(Math.random() * modelData.length)
-    } while (n == nxt)
-    return nxt
-  })
+  filteredModels.subscribe(filtered => {
+    if (filtered.length === 0) return
+    
+    currentModelIndex.update(n => {
+      let nxt 
+      do {
+        nxt = Math.floor(Math.random() * filtered.length)
+      } while (n === nxt && filtered.length > 1)
+      return nxt
+    })
+  })()
 }

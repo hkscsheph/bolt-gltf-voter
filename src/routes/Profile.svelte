@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { user } from '../stores/auth';
-  import { models, currentModelIndex } from '../stores/models';
+  import { models, filteredModels, currentModelIndex, selectedYear } from '../stores/models';
   import { signOut } from '../services/auth';
   import { push } from 'svelte-spa-router';
   import Header from '../components/Header.svelte';
@@ -49,9 +49,27 @@
 
   const handleLastModel = () => {
     if (lastModelId) {
-      const index = $models.findIndex(model => model.id === lastModelId);
-      if (index !== -1) {
-        currentModelIndex.set(index);
+      // First, find the model in all models to determine which year it belongs to
+      const allModels = $models;
+      const modelIndex = allModels.findIndex(model => model.id === lastModelId);
+      
+      if (modelIndex !== -1) {
+        const model = allModels[modelIndex];
+        
+        // Set the appropriate year filter based on the model
+        if (model.id.includes('_2526')) {
+          selectedYear.set('2526');
+        } else {
+          selectedYear.set('2425');
+        }
+        
+        // Wait for the filtered models to update, then find the index in filtered models
+        setTimeout(() => {
+          const filteredIndex = $filteredModels.findIndex(model => model.id === lastModelId);
+          if (filteredIndex !== -1) {
+            currentModelIndex.set(filteredIndex);
+          }
+        }, 100);
       }
     }
     push('/swipe');
