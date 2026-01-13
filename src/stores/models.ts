@@ -7,9 +7,9 @@ const modelData: Model[] = [
     id: '2G06',
     name: '哪吒',
     description: '哪吒',
-    url: '/Ho Cheuk Lam 2G06.gltf',
+    url: '/2425/Ho Cheuk Lam 2G06.gltf',
     reference: null,
-    thumbnailUrl: '/Ho Cheuk Lam 2G06.png',
+    thumbnailUrl: '/2425/Ho Cheuk Lam 2G06.png',
     designer: 'Ho Cheuk Lam',
     category: '哪吒'
   },
