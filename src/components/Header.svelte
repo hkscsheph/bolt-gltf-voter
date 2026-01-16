@@ -2,7 +2,7 @@
   import { user } from '../stores/auth'
   import { push } from 'svelte-spa-router'
   
-  export let title = "ModelSwipe"
+  export let title = "VoxEdit 作品"
   export let link = ''
   export let showProfile = true
   export let showBack = false

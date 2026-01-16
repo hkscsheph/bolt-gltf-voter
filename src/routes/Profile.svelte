@@ -89,7 +89,7 @@
 </script>
 
 <div class="min-h-screen bg-primary-900">
-  <Header title="Your Profile" showBack={true} showProfile={false} />
+  <Header title="我的記錄" showBack={true} showProfile={false} />
 
   <div class="container mx-auto px-4 py-6">
     {#if $user}
@@ -110,22 +110,22 @@
       </div>
 
       <div class="bg-primary-800 rounded-xl p-6 mb-6 animate-in">
-        <h3 class="text-lg font-semibold text-white mb-4">Your Stats</h3>
+        <h3 class="text-lg font-semibold text-white mb-4">基本統計</h3>
         {#if isLoading}
-          <div class="text-center text-primary-300">Loading stats...</div>
+          <div class="text-center text-primary-300">讀取統計中...</div>
         {:else}
           <div class="grid grid-cols-3 gap-4">
             <div class="bg-primary-700 rounded-lg p-4 text-center">
               <span class="block text-2xl font-bold text-accent-400">{stats.liked}</span>
-              <span class="text-sm text-primary-300">Liked</span>
+              <span class="text-sm text-primary-300">喜愛</span>
             </div>
             <div class="bg-primary-700 rounded-lg p-4 text-center">
               <span class="block text-2xl font-bold text-error-500">{stats.disliked}</span>
-              <span class="text-sm text-primary-300">Disliked</span>
+              <span class="text-sm text-primary-300">麻麻</span>
             </div>
             <div class="bg-primary-700 rounded-lg p-4 text-center">
               <span class="block text-2xl font-bold text-primary-300">{stats.skipped}</span>
-              <span class="text-sm text-primary-300">Skipped</span>
+              <span class="text-sm text-primary-300">略過</span>
             </div>
           </div>
         {/if}
@@ -135,7 +135,7 @@
               on:click={handleLastModel}
               class="bg-accent-500 hover:bg-accent-600 text-white py-2 px-4 rounded-lg transition-colors"
             >
-              View Last Like
+              回顧最後一份讚好作品
             </button>
           </div>
         {/if}
@@ -154,20 +154,20 @@
         >
           {#if isSigningOut}
             <div class="inline-block animate-spin h-5 w-5 border-t-2 border-b-2 border-white rounded-full mr-2"></div>
-            Signing out...
+            正在登出...
           {:else}
-            Sign Out
+            登出
           {/if}
         </button>
       </div>
     {:else}
       <div class="text-center py-12">
-        <p class="text-white">Please sign in to view your profile</p>
+        <p class="text-white">請登入查閱你的記錄</p>
         <button
           on:click={() => push('/login')}
           class="mt-4 bg-accent-500 hover:bg-accent-600 text-white py-2 px-4 rounded-lg transition-colors"
         >
-          Sign In
+          登入
         </button>
       </div>
     {/if}

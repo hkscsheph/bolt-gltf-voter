@@ -48,16 +48,14 @@
 <div class="flex flex-col items-center justify-center min-h-screen bg-primary-900 px-4">
   <div bind:this={logoElement} class="mb-10 text-center">
     <div class="inline-block mb-4">
-      <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path>
-      </svg>
+      <svg fill="#fff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80px" height="80px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="2069a460dcf28295e231f3111e040073"> <path display="inline" fill-rule="evenodd" clip-rule="evenodd" d="M457.832,418.164L128.831,511.5L63.499,308.497L19.163,42.5 l312.67-42l161.004,123.667L457.832,418.164z M133.499,383.169l100.335-25.668l-25.668-49.004l-93.335,21.005L133.499,383.169z M103.163,240.83l98.003-20.996l25.668,46.664l109.668-23.332l-67.668-84.004L84.499,191.835L103.163,240.83z M324.833,30.832 l-272.997,35l18.663,42l195.999-28l72.335,72.336l114.336-18.668L324.833,30.832z"> </path> </g> </g></svg>
     </div>
-    <h1 class="text-3xl font-bold text-white mb-2">ModelSwipe</h1>
-    <p class="text-primary-300 max-w-md">Discover and vote on amazing 3D models</p>
+    <h1 class="text-3xl font-bold text-white mb-2">VoxEdit 作品</h1>
+    <p class="text-primary-300 max-w-md">從2次元到3D立體，從創作到互相欣賞</p>
   </div>
   
   <div class="w-full max-w-md bg-primary-800 rounded-xl p-6 shadow-lg">
-    <h2 class="text-xl font-semibold text-white mb-6 text-center animate-in">Sign in to continue</h2>
+    <h2 class="text-xl font-semibold text-white mb-6 text-center animate-in">以書院身份登入</h2>
     
     {#if error}
       <div class="bg-error-500 bg-opacity-20 border border-error-500 text-white p-3 rounded-lg mb-4">
@@ -83,6 +81,4 @@
       {/if}
     </button>
   </div>
-  
-  <p class="text-primary-400 text-sm mt-6 animate-in">By signing in, you agree to our Terms and Privacy Policy</p>
 </div>
