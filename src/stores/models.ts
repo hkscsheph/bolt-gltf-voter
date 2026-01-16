@@ -1,4 +1,4 @@
-import { writable } from 'svelte/store'
+﻿import { writable } from 'svelte/store'
 import type { Model } from '../types/model'
 
 // Example model data
@@ -18,7 +18,7 @@ const modelData: Model[] = [
     name: '關公',
     description: '關公',
     url: '/2425/Sze Hei Man 2R12.gltf',
-    reference: '/2425/Sze Hei Man 2R12.jpg',
+    reference: '/2425/2R12.jpg',
     thumbnailUrl: '/2425/Sze Hei Man 2R12.png',
     designer: 'Sze Hei Man',
     category: '關公'
@@ -68,7 +68,7 @@ const modelData: Model[] = [
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Chan Yau Ching 2R02.gltf',
-    reference: '/2425/Chan Yau Ching 2R02.jpg',
+    reference: '/2425/2R02.jpg',
     thumbnailUrl: '/2425/Chan Yau Ching 2R02.png',
     designer: 'Chan Yau Ching',
     category: '哪吒'
@@ -78,7 +78,7 @@ const modelData: Model[] = [
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Chang Pui Ting 2R03.gltf',
-    reference: '/2425/Chang Pui Ting 2R03.jpg',
+    reference: '/2425/2R03.jpg',
     thumbnailUrl: '/2425/Chang Pui Ting 2R03.png',
     designer: 'Chang Pui Ting',
     category: '哪吒'
@@ -88,7 +88,7 @@ const modelData: Model[] = [
     name: '刑天',
     description: '刑天',
     url: '/2425/Cheng Ho Hin 2R04.gltf',
-    reference: '/2425/Cheng Ho Hin 2R04.jpg',
+    reference: '/2425/2R04.jpg',
     thumbnailUrl: '/2425/Cheng Ho Hin 2R04.png',
     designer: 'Cheng Ho Hin',
     category: '刑天'
@@ -98,7 +98,7 @@ const modelData: Model[] = [
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Cheng Tsz Ki 2B01.gltf',
-    reference: '/2425/Chan Yau Ching 2R02.jpg',
+    reference: '/2425/2R02.jpg',
     thumbnailUrl: '/2425/Cheng Tsz Ki 2B01.png',
     designer: 'Cheng Tsz Ki',
     category: '哪吒'
@@ -128,7 +128,7 @@ const modelData: Model[] = [
     name: '嫦娥',
     description: '嫦娥',
     url: '/2425/Chu Pat Chin 2B03.gltf',
-    reference: '/2425/Chu Pat Chin 2B03.jpg',
+    reference: '/2425/2B03.jpg',
     thumbnailUrl: '/2425/Chu Pat Chin 2B03.png',
     designer: 'Chu Pat Chin',
     category: '嫦娥'
@@ -138,7 +138,7 @@ const modelData: Model[] = [
     name: '女媧',
     description: '女媧',
     url: '/2425/Chui Cheuk Tung 2R05.gltf',
-    reference: '/2425/Chui Cheuk Tung 2R05.jpg',
+    reference: '/2425/2R05.jpg',
     thumbnailUrl: '/2425/Chui Cheuk Tung 2R05.png',
     designer: 'Chui Cheuk Tung',
     category: '女媧'
@@ -158,7 +158,7 @@ const modelData: Model[] = [
     name: '孫悟空',
     description: '孫悟空',
     url: '/2425/Chung Keith 2G05.gltf',
-    reference: '/2425/Chung Keith 2G05.jpg',
+    reference: '/2425/2G05.jpg',
     thumbnailUrl: '/2425/Chung Keith 2G05.png',
     designer: 'Chung Keith',
     category: '孫悟空'
@@ -168,7 +168,7 @@ const modelData: Model[] = [
     name: '財神',
     description: '財神',
     url: '/2425/Ho Wing Hei 2R06.gltf',
-    reference: '/2425/Ho Wing Hei 2R06.jpg',
+    reference: '/2425/2R06.jpg',
     thumbnailUrl: '/2425/Ho Wing Hei 2R06.png',
     designer: 'Ho Wing Hei',
     category: '財神'
@@ -188,7 +188,7 @@ const modelData: Model[] = [
     name: '媽祖',
     description: '媽祖',
     url: '/2425/Lam Tung Yan 2R07.gltf',
-    reference: '/2425/Lam Tung Yan 2R07.jpg',
+    reference: '/2425/2R07.jpg',
     thumbnailUrl: '/2425/Lam Tung Yan 2R07.png',
     designer: 'Lam Tung Yan',
     category: '媽祖'
@@ -198,7 +198,7 @@ const modelData: Model[] = [
     name: '觀音',
     description: '觀音',
     url: '/2425/Lau Qian Yu Casey 2B06.gltf',
-    reference: '/2425/Lau Qian Yu Casey 2B06.jpg',
+    reference: '/2425/2B06.jpg',
     thumbnailUrl: '/2425/Lau Qian Yu Casey 2B06.png',
     designer: 'Lau Qian Yu Casey',
     category: '觀音'
@@ -218,7 +218,7 @@ const modelData: Model[] = [
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Lee Yuet Hei Allison 2B08.gltf',
-    reference: '/2425/Lee Yuet Hei Allison 2B08.jpg',
+    reference: '/2425/2B08.jpg',
     thumbnailUrl: '/2425/Lee Yuet Hei Allison 2B08.png',
     designer: 'Lee Yuet Hei Allison',
     category: '哪吒'
@@ -248,7 +248,7 @@ const modelData: Model[] = [
     name: '嫦娥',
     description: '嫦娥',
     url: '/2425/Liu Sophie 2B10.gltf',
-    reference: '/2425/Liu Sophie 2B10.jpg',
+    reference: '/2425/2B10.jpg',
     thumbnailUrl: '/2425/Liu Sophie 2B10.png',
     designer: 'Liu Sophie',
     category: '嫦娥'
@@ -258,7 +258,7 @@ const modelData: Model[] = [
     name: '唐三藏',
     description: '唐三藏',
     url: '/2425/Lo Julie Wing Ching 2B11.gltf',
-    reference: '/2425/Lo Julie Wing Ching 2B11.jpg',
+    reference: '/2425/2B11.jpg',
     thumbnailUrl: '/2425/Lo Julie Wing Ching 2B11.png',
     designer: 'Lo Julie Wing Ching',
     category: '唐三藏'
@@ -278,7 +278,7 @@ const modelData: Model[] = [
     name: '哪吒',
     description: '哪吒',
     url: '/2425/Mak Chi Ching 2B13.gltf',
-    reference: '/2425/Mak Chi Ching 2B13.jpg',
+    reference: '/2425/2B13.jpg',
     thumbnailUrl: '/2425/Mak Chi Ching 2B13.png',
     designer: 'Mak Chi Ching',
     category: '哪吒'
@@ -288,7 +288,7 @@ const modelData: Model[] = [
     name: '女媧',
     description: '女媧',
     url: '/2425/Man Wing Hei Jessy May 2G08.gltf',
-    reference: '/2425/Man Wing Hei Jessy May 2G08.jpg',
+    reference: '/2425/2G08.jpg',
     thumbnailUrl: '/2425/Man Wing Hei Jessy May 2G08.png',
     designer: 'Man Wing Hei Jessy May',
     category: '女媧'
@@ -298,7 +298,7 @@ const modelData: Model[] = [
     name: '悟空',
     description: '悟空',
     url: '/2425/Mok Chun Hei 2G09.gltf',
-    reference: '/2425/Mok Chun Hei 2G09.jpg',
+    reference: '/2425/2G09.jpg',
     thumbnailUrl: '/2425/Mok Chun Hei 2G09.png',
     designer: 'Mok Chun Hei',
     category: '悟空'
@@ -348,7 +348,7 @@ const modelData: Model[] = [
     name: '唐三藏',
     description: '唐三藏',
     url: '/2425/Tong Kai Shun 2G13.gltf',
-    reference: '/2425/Tong Kai Shun 2G13.jpg',
+    reference: '/2425/2G13.jpg',
     thumbnailUrl: '/2425/Tong Kai Shun 2G13.png',
     designer: 'Tong Kai Shun',
     category: '唐三藏'
@@ -378,7 +378,7 @@ const modelData: Model[] = [
     name: '修女',
     description: '修女',
     url: '/2425/Tse Wai Cheng 2B16.gltf',
-    reference: '/2425/Tse Wai Cheng 2B16.jpg',
+    reference: '/2425/2B16.jpg',
     thumbnailUrl: '/2425/Tse Wai Cheng 2B16.png',
     designer: 'Tse Wai Cheng',
     category: '修女'
@@ -498,7 +498,7 @@ const modelData: Model[] = [
     name: '門神',
     description: '門神',
     url: '/2425/Yip Dick Yar Naddy 2G18.gltf',
-    reference: '/2425/Yip Dick Yar Naddy 2G18.jpg',
+    reference: '/2425/2G18.jpg',
     thumbnailUrl: '/2425/Yip Dick Yar Naddy 2G18.png',
     designer: 'Yip Dick Yar Naddy',
     category: '門神'
@@ -588,7 +588,7 @@ const modelData: Model[] = [
     name: '渾沌',
     description: '渾沌',
     url: '/2425/Meng Wong Hei 2R10.gltf',
-    reference: '/2425/Meng Wong Hei 2R10.jpg',
+    reference: '/2425/2R10.jpg',
     thumbnailUrl: '/2425/Meng Wong Hei 2R10.png',
     designer: 'Meng Wong Hei',
     category: '渾沌'
@@ -609,7 +609,7 @@ const modelData: Model[] = [
     name: '兔',
     description: '兔',
     url: '/2526/Chan Hei Yin 2R01.gltf',
-    reference: '/2526/Chan Hei Yin 2R01.jpg',
+    reference: '/2526/2R01.jpg',
     thumbnailUrl: '/2526/Chan Hei Yin 2R01.png',
     designer: 'Chan Hei Yin',
     category: '兔'
@@ -619,7 +619,7 @@ const modelData: Model[] = [
     name: '兔',
     description: '兔',
     url: '/2526/Chan Tsz Kiu 2R02.gltf',
-    reference: '/2526/Chan Tsz Kiu 2R02.jpg',
+    reference: '/2526/2R02.jpg',
     thumbnailUrl: '/2526/Chan Tsz Kiu 2R02.png',
     designer: 'Chan Tsz Kiu',
     category: '兔'
@@ -629,7 +629,7 @@ const modelData: Model[] = [
     name: '兔',
     description: '兔',
     url: '/2526/Chan Tsz Lam 2R03.gltf',
-    reference: '/2526/Chan Tsz Lam 2R03.jpg',
+    reference: '/2526/2R03.jpg',
     thumbnailUrl: '/2526/Chan Tsz Lam 2R03.png',
     designer: 'Chan Tsz Lam',
     category: '兔'
@@ -639,7 +639,7 @@ const modelData: Model[] = [
     name: '蛇',
     description: '蛇',
     url: '/2526/Chan Tsz Yau 2R04.gltf',
-    reference: '/2526/Chan Tsz Yau 2R04.jpg',
+    reference: '/2526/2R04.jpg',
     thumbnailUrl: '/2526/Chan Tsz Yau 2R04.png',
     designer: 'Chan Tsz Yau',
     category: '蛇'
@@ -649,7 +649,7 @@ const modelData: Model[] = [
     name: '羊',
     description: '羊',
     url: '/2526/Chau Ka Wing 2R05.gltf',
-    reference: '/2526/Chau Ka Wing 2R05.jpg',
+    reference: '/2526/2R05.jpg',
     thumbnailUrl: '/2526/Chau Ka Wing 2R05.png',
     designer: 'Chau Ka Wing',
     category: '羊'
@@ -659,7 +659,7 @@ const modelData: Model[] = [
     name: '龍',
     description: '龍',
     url: '/2526/Cheung Hong Ching 2R06.gltf',
-    reference: '/2526/Cheung Hong Ching 2R06.jpg',
+    reference: '/2526/2R06.jpg',
     thumbnailUrl: '/2526/Cheung Hong Ching 2R06.png',
     designer: 'Cheung Hong Ching',
     category: '龍'
@@ -669,7 +669,7 @@ const modelData: Model[] = [
     name: '兔',
     description: '兔',
     url: '/2526/Choi Chin Yau 2R07.gltf',
-    reference: '/2526/Choi Chin Yau 2R07.jpg',
+    reference: '/2526/2R07.jpg',
     thumbnailUrl: '/2526/Choi Chin Yau 2R07.png',
     designer: 'Choi Chin Yau',
     category: '兔'
@@ -679,7 +679,7 @@ const modelData: Model[] = [
     name: '鼠',
     description: '鼠',
     url: '/2526/Choi Ching Nga 2R08.gltf',
-    reference: '/2526/Choi Ching Nga 2R08.jpg',
+    reference: '/2526/2R08.jpg',
     thumbnailUrl: '/2526/Choi Ching Nga 2R08.png',
     designer: 'Choi Ching Nga',
     category: '鼠'
@@ -689,7 +689,7 @@ const modelData: Model[] = [
     name: '豬',
     description: '豬',
     url: '/2526/Chow Sze Yin 2R09.gltf',
-    reference: '/2526/Chow Sze Yin 2R09.jpg',
+    reference: '/2526/2R09.jpg',
     thumbnailUrl: '/2526/Chow Sze Yin 2R09.png',
     designer: 'Chow Sze Yin',
     category: '豬'
@@ -699,7 +699,7 @@ const modelData: Model[] = [
     name: '龍',
     description: '龍',
     url: '/2526/Fung Hui Yeung Nathan 2R10.gltf',
-    reference: '/2526/Fung Hui Yeung Nathan 2R10.jpg',
+    reference: '/2526/2R10.jpg',
     thumbnailUrl: '/2526/Fung Hui Yeung Nathan 2R10.png',
     designer: 'Fung Hui Yeung Nathan',
     category: '龍'
@@ -709,7 +709,7 @@ const modelData: Model[] = [
     name: '龍',
     description: '龍',
     url: '/2526/Ho Ho Ming 2R11.gltf',
-    reference: '/2526/Ho Ho Ming 2R11.jpg',
+    reference: '/2526/2R11.jpg',
     thumbnailUrl: '/2526/Ho Ho Ming 2R11.png',
     designer: 'Ho Ho Ming',
     category: '龍'
@@ -719,7 +719,7 @@ const modelData: Model[] = [
     name: '虎',
     description: '虎',
     url: '/2526/Kong Tsz Hin 2R12.gltf',
-    reference: '/2526/Kong Tsz Hin 2R12.jpg',
+    reference: '/2526/2R12.jpg',
     thumbnailUrl: '/2526/Kong Tsz Hin 2R12.png',
     designer: 'Kong Tsz Hin',
     category: '虎'
@@ -729,7 +729,7 @@ const modelData: Model[] = [
     name: '猴',
     description: '猴',
     url: '/2526/Lam Oi Yin Chloe 2R14.gltf',
-    reference: '/2526/Lam Oi Yin Chloe 2R14.jpg',
+    reference: '/2526/2R14.jpg',
     thumbnailUrl: '/2526/Lam Oi Yin Chloe 2R14.png',
     designer: 'Lam Oi Yin Chloe',
     category: '猴'
@@ -739,7 +739,7 @@ const modelData: Model[] = [
     name: '兔',
     description: '兔',
     url: '/2526/Lau Cheuk Yat 2R15.gltf',
-    reference: '/2526/Lau Cheuk Yat 2R15.jpg',
+    reference: '/2526/2R15.jpg',
     thumbnailUrl: '/2526/Lau Cheuk Yat 2R15.png',
     designer: 'Lau Cheuk Yat',
     category: '兔'
@@ -749,7 +749,7 @@ const modelData: Model[] = [
     name: '馬',
     description: '馬',
     url: '/2526/Lee Hiu Ching 2R16.gltf',
-    reference: '/2526/Lee Hiu Ching 2R16.jpg',
+    reference: '/2526/2R16.jpg',
     thumbnailUrl: '/2526/Lee Hiu Ching 2R16.png',
     designer: 'Lee Hiu Ching',
     category: '馬'
@@ -759,7 +759,7 @@ const modelData: Model[] = [
     name: '龍',
     description: '龍',
     url: '/2526/Lei Tik Sum 2R17.gltf',
-    reference: '/2526/Lei Tik Sum 2R17.jpg',
+    reference: '/2526/2R17.jpg',
     thumbnailUrl: '/2526/Lei Tik Sum 2R17.png',
     designer: 'Lei Tik Sum',
     category: '龍'
@@ -769,7 +769,7 @@ const modelData: Model[] = [
     name: '狗',
     description: '狗',
     url: '/2526/Li Sum Ying 2R18.gltf',
-    reference: '/2526/Li Sum Ying 2R18.jpg',
+    reference: '/2526/2R18.jpg',
     thumbnailUrl: '/2526/Li Sum Ying 2R18.png',
     designer: 'Li Sum Ying',
     category: '狗'
@@ -779,7 +779,7 @@ const modelData: Model[] = [
     name: '龍',
     description: '龍',
     url: '/2526/Liang Gwai Fei Lea 2R19.gltf',
-    reference: '/2526/Liang Gwai Fei Lea 2R19.jpg',
+    reference: '/2526/2R19.jpg',
     thumbnailUrl: '/2526/Liang Gwai Fei Lea 2R19.png',
     designer: 'Liang Gwai Fei Lea',
     category: '龍'
@@ -789,7 +789,7 @@ const modelData: Model[] = [
     name: '兔',
     description: '兔',
     url: '/2526/Liu Cham Cho 2R20.gltf',
-    reference: '/2526/Liu Cham Cho 2R20.jpg',
+    reference: '/2526/2R20.jpg',
     thumbnailUrl: '/2526/Liu Cham Cho 2R20.png',
     designer: 'Liu Cham Cho',
     category: '兔'
@@ -799,7 +799,7 @@ const modelData: Model[] = [
     name: '豬',
     description: '豬',
     url: '/2526/Mak Ka Yu 2R21.gltf',
-    reference: '/2526/Mak Ka Yu 2R21.jpg',
+    reference: '/2526/2R21.jpg',
     thumbnailUrl: '/2526/Mak Ka Yu 2R21.png',
     designer: 'Mak Ka Yu',
     category: '豬'
@@ -809,7 +809,7 @@ const modelData: Model[] = [
     name: '狗',
     description: '狗',
     url: '/2526/Tai Chun Lok 2R22.gltf',
-    reference: '/2526/Tai Chun Lok 2R22.jpg',
+    reference: '/2526/2R22.jpg',
     thumbnailUrl: '/2526/Tai Chun Lok 2R22.png',
     designer: 'Tai Chun Lok',
     category: '狗'
@@ -819,7 +819,7 @@ const modelData: Model[] = [
     name: '鼠',
     description: '鼠',
     url: '/2526/Tong Wang Long Timmus 2R23.gltf',
-    reference: '/2526/Tong Wang Long Timmus 2R23.jpg',
+    reference: '/2526/2R23.jpg',
     thumbnailUrl: '/2526/Tong Wang Long Timmus 2R23.png',
     designer: 'Tong Wang Long Timmus',
     category: '鼠'
@@ -829,7 +829,7 @@ const modelData: Model[] = [
     name: '龍',
     description: '龍',
     url: '/2526/Wong Chit Yin Nathen 2R24.gltf',
-    reference: '/2526/Wong Chit Yin Nathen 2R24.jpg',
+    reference: '/2526/2R24.jpg',
     thumbnailUrl: '/2526/Wong Chit Yin Nathen 2R24.png',
     designer: 'Wong Chit Yin Nathen',
     category: '龍'
@@ -839,7 +839,7 @@ const modelData: Model[] = [
     name: '龍',
     description: '龍',
     url: '/2526/Yan Wai Kit 2R25.gltf',
-    reference: '/2526/Yan Wai Kit 2R25.jpg',
+    reference: '/2526/2R25.jpg',
     thumbnailUrl: '/2526/Yan Wai Kit 2R25.png',
     designer: 'Yan Wai Kit',
     category: '龍'
@@ -849,7 +849,7 @@ const modelData: Model[] = [
     name: '豬',
     description: '豬',
     url: '/2526/Yiu Lok Tung 2R26.gltf',
-    reference: '/2526/Yiu Lok Tung 2R26.jpg',
+    reference: '/2526/2R26.jpg',
     thumbnailUrl: '/2526/Yiu Lok Tung 2R26.png',
     designer: 'Yiu Lok Tung',
     category: '豬'
@@ -859,7 +859,7 @@ const modelData: Model[] = [
     name: '兔',
     description: '兔',
     url: '/2526/Yung Lok Muhammad Rahan Abbasi 2R27.gltf',
-    reference: '/2526/Yung Lok Muhammad Rahan Abbasi 2R27.jpg',
+    reference: '/2526/2R27.jpg',
     thumbnailUrl: '/2526/Yung Lok Muhammad Rahan Abbasi 2R27.png',
     designer: 'Yung Lok Muhammad Rahan Abbasi',
     category: '兔'
