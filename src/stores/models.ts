@@ -864,6 +864,417 @@ const modelData: Model[] = [
     designer: 'Yung Lok Muhammad Rahan Abbasi',
     category: '兔'
   },
+  // Additional 2526 Class entries
+  {
+    id: '2G01_2526',
+    name: '蛇',
+    description: '蛇',
+    url: '/2526/Chan Sze Lok 2G01.gltf',
+    reference: '/2526/2G01.jpg',
+    thumbnailUrl: '/2526/Chan Sze Lok 2G01.png',
+    designer: 'Chan Sze Lok',
+    category: '蛇'
+  },
+  {
+    id: '2G03_2526',
+    name: '兔',
+    description: '兔',
+    url: '/2526/Cheung Sze Yiu 2G03.gltf',
+    reference: null,
+    thumbnailUrl: '/2526/Cheung Sze Yiu 2G03.png',
+    designer: 'Cheung Sze Yiu',
+    category: '兔'
+  },
+  {
+    id: '2G04_2526',
+    name: '兔',
+    description: '兔',
+    url: '/2526/Cheung Yu Ngai 2G04.gltf',
+    reference: null,
+    thumbnailUrl: '/2526/Cheung Yu Ngai 2G04.png',
+    designer: 'Cheung Yu Ngai',
+    category: '兔'
+  },
+  {
+    id: '2G08_2526',
+    name: '龍',
+    description: '龍',
+    url: '/2526/Chung Hoi Ching 2G08.gltf',
+    reference: '/2526/2G08.jpg',
+    thumbnailUrl: '/2526/Chung Hoi Ching 2G08.png',
+    designer: 'Chung Hoi Ching',
+    category: '龍'
+  },
+  {
+    id: '2G09_2526',
+    name: '鼠',
+    description: '鼠',
+    url: '/2526/Fung Shun Fu Reeve 2G09.gltf',
+    reference: '/2526/2G09.jpg',
+    thumbnailUrl: '/2526/Fung Shun Fu Reeve 2G09.png',
+    designer: 'Fung Shun Fu Reeve',
+    category: '鼠'
+  },
+  {
+    id: '2G10_2526',
+    name: '龍',
+    description: '龍',
+    url: '/2526/Hui Ching Hei 2G10.gltf',
+    reference: '/2526/2G10.jpg',
+    thumbnailUrl: '/2526/Hui Ching Hei 2G10.png',
+    designer: 'Hui Ching Hei',
+    category: '龍'
+  },
+  {
+    id: '2G14_2526',
+    name: '兔',
+    description: '兔',
+    url: '/2526/Kwok Hiu Ching Eliana 2G14.gltf',
+    reference: '/2526/2G14.jpg',
+    thumbnailUrl: '/2526/Kwok Hiu Ching Eliana 2G14.png',
+    designer: 'Kwok Hiu Ching Eliana',
+    category: '兔'
+  },
+  {
+    id: '2G15_2526',
+    name: '龍',
+    description: '龍',
+    url: '/2526/Lau Man Tsing Rabeea 2G15.gltf',
+    reference: '/2526/2G15.jpg',
+    thumbnailUrl: '/2526/Lau Man Tsing Rabeea 2G15.png',
+    designer: 'Lau Man Tsing Rabeea',
+    category: '龍'
+  },
+  {
+    id: '2G16_2526',
+    name: '人',
+    description: '人',
+    url: '/2526/Leung Chit Yin 2G16.gltf',
+    reference: null,
+    thumbnailUrl: '/2526/Leung Chit Yin 2G16.png',
+    designer: 'Leung Chit Yin',
+    category: '人'
+  },
+  {
+    id: '2G17_2526',
+    name: '牛',
+    description: '牛',
+    url: '/2526/Leung Ngai Hin 2G17.gltf',
+    reference: '/2526/2G17.jpg',
+    thumbnailUrl: '/2526/Leung Ngai Hin 2G17.png',
+    designer: 'Leung Ngai Hin',
+    category: '牛'
+  },
+  {
+    id: '2G18_2526',
+    name: '馬',
+    description: '馬',
+    url: '/2526/Mo Jasmine 2G18.gltf',
+    reference: '/2526/2G18.jpg',
+    thumbnailUrl: '/2526/Mo Jasmine 2G18.png',
+    designer: 'Mo Jasmine',
+    category: '馬'
+  },
+  {
+    id: '2G19_2526',
+    name: '鼠',
+    description: '鼠',
+    url: '/2526/Ng Mavis 2G19.gltf',
+    reference: '/2526/2G19.jpg',
+    thumbnailUrl: '/2526/Ng Mavis 2G19.png',
+    designer: 'Ng Mavis',
+    category: '鼠'
+  },
+  {
+    id: '2G20_2526',
+    name: '蛇',
+    description: '蛇',
+    url: '/2526/Ng Tsz Long 2G20.gltf',
+    reference: null,
+    thumbnailUrl: '/2526/Ng Tsz Long 2G20.png',
+    designer: 'Ng Tsz Long',
+    category: '蛇'
+  },
+  {
+    id: '2G21_2526',
+    name: '虎',
+    description: '虎',
+    url: '/2526/Tang Hoi Chun 2G21.gltf',
+    reference: '/2526/2G21.jpg',
+    thumbnailUrl: '/2526/Tang Hoi Chun 2G21.png',
+    designer: 'Tang Hoi Chun',
+    category: '虎'
+  },
+  {
+    id: '2G22_2526',
+    name: '狗',
+    description: '狗',
+    url: '/2526/Wong Ching Wan 2G22.gltf',
+    reference: '/2526/2G22.jpg',
+    thumbnailUrl: '/2526/Wong Ching Wan 2G22.png',
+    designer: 'Wong Ching Wan',
+    category: '狗'
+  },
+  {
+    id: '2G26_2526',
+    name: '兔',
+    description: '兔',
+    url: '/2526/Wong Yuet Ching Renee 2G26.gltf',
+    reference: '/2526/2G26.jpg',
+    thumbnailUrl: '/2526/Wong Yuet Ching Renee 2G26.png',
+    designer: 'Wong Yuet Ching Renee',
+    category: '兔'
+  },
+  {
+    id: '2G27_2526',
+    name: '狗',
+    description: '狗',
+    url: '/2526/Yoo De Lin 2G27.gltf',
+    reference: null,
+    thumbnailUrl: '/2526/Yoo De Lin 2G27.png',
+    designer: 'Yoo De Lin',
+    category: '狗'
+  },
+  {
+    id: '2B01_2526',
+    name: '龍',
+    description: '龍',
+    url: '/2526/Chan Bui Sa 2B01.gltf',
+    reference: '/2526/2B01.jpg',
+    thumbnailUrl: '/2526/Chan Bui Sa 2B01.png',
+    designer: 'Chan Bui Sa',
+    category: '龍'
+  },
+  {
+    id: '2B02_2526',
+    name: '兔',
+    description: '兔',
+    url: '/2526/Chan Lok Wing Abbie 2B02.gltf',
+    reference: '/2526/2B02.jpg',
+    thumbnailUrl: '/2526/Chan Lok Wing Abbie 2B02.png',
+    designer: 'Chan Lok Wing Abbie',
+    category: '兔'
+  },
+  {
+    id: '2B04_2526',
+    name: '蛇',
+    description: '蛇',
+    url: '/2526/Cheng Ngan Fong Jamie 2B04.gltf',
+    reference: '/2526/2B04.jpg',
+    thumbnailUrl: '/2526/Cheng Ngan Fong Jamie 2B04.png',
+    designer: 'Cheng Ngan Fong Jamie',
+    category: '蛇'
+  },
+  {
+    id: '2B05_2526',
+    name: '羊',
+    description: '羊',
+    url: '/2526/Chow Tsz Lam 2B05.gltf',
+    reference: '/2526/2B05.jpg',
+    thumbnailUrl: '/2526/Chow Tsz Lam 2B05.png',
+    designer: 'Chow Tsz Lam',
+    category: '羊'
+  },
+  {
+    id: '2B06_2526',
+    name: '狗',
+    description: '狗',
+    url: '/2526/Chung Hei Long 2B06.gltf',
+    reference: '/2526/2B06.jpg',
+    thumbnailUrl: '/2526/Chung Hei Long 2B06.png',
+    designer: 'Chung Hei Long',
+    category: '狗'
+  },
+  {
+    id: '2B07_2526',
+    name: '龍',
+    description: '龍',
+    url: '/2526/Ho Chun Hei 2B07.gltf',
+    reference: '/2526/2B07.jpg',
+    thumbnailUrl: '/2526/Ho Chun Hei 2B07.png',
+    designer: 'Ho Chun Hei',
+    category: '龍'
+  },
+  {
+    id: '2B08_2526',
+    name: '狗',
+    description: '狗',
+    url: '/2526/Ho Hiu Ching 2B08.gltf',
+    reference: '/2526/2B08.jpg',
+    thumbnailUrl: '/2526/Ho Hiu Ching 2B08.png',
+    designer: 'Ho Hiu Ching',
+    category: '狗'
+  },
+  {
+    id: '2B10_2526',
+    name: '兔',
+    description: '兔',
+    url: '/2526/Kou Jyothi 2B10.gltf',
+    reference: '/2526/2B10.jpg',
+    thumbnailUrl: '/2526/Kou Jyothi 2B10.png',
+    designer: 'Kou Jyothi',
+    category: '兔'
+  },
+  {
+    id: '2B11_2526',
+    name: '狗',
+    description: '狗',
+    url: '/2526/Kwok Kai Him 2B11.gltf',
+    reference: '/2526/2B11.jpg',
+    thumbnailUrl: '/2526/Kwok Kai Him 2B11.png',
+    designer: 'Kwok Kai Him',
+    category: '狗'
+  },
+  {
+    id: '2R13_2526',
+    name: '鼠',
+    description: '鼠',
+    url: '/2526/Lam Long Him 2R13.gltf',
+    reference: null,
+    thumbnailUrl: '/2526/Lam Long Him 2R13.png',
+    designer: 'Lam Long Him',
+    category: '鼠'
+  },
+  {
+    id: '2B12_2526',
+    name: '兔',
+    description: '兔',
+    url: '/2526/Lee Hiu Tung 2B12.gltf',
+    reference: '/2526/2B12.jpg',
+    thumbnailUrl: '/2526/Lee Hiu Tung 2B12.png',
+    designer: 'Lee Hiu Tung',
+    category: '兔'
+  },
+  {
+    id: '2B13_2526',
+    name: '虎',
+    description: '虎',
+    url: '/2526/Leung Sin Tung 2B13.gltf',
+    reference: '/2526/2B13.jpg',
+    thumbnailUrl: '/2526/Leung Sin Tung 2B13.png',
+    designer: 'Leung Sin Tung',
+    category: '虎'
+  },
+  {
+    id: '2B14_2526',
+    name: '兔',
+    description: '兔',
+    url: '/2526/Leung Yi Ching 2B14.gltf',
+    reference: null,
+    thumbnailUrl: '/2526/Leung Yi Ching 2B14.png',
+    designer: 'Leung Yi Ching',
+    category: '兔'
+  },
+  {
+    id: '2B15_2526',
+    name: '兔',
+    description: '兔',
+    url: '/2526/Li Heidi 2B15.gltf',
+    reference: '/2526/2B15.jpg',
+    thumbnailUrl: '/2526/Li Heidi 2B15.png',
+    designer: 'Li Heidi',
+    category: '兔'
+  },
+  {
+    id: '2B16_2526',
+    name: '馬',
+    description: '馬',
+    url: '/2526/Ma Hoi Cheung 2B16.gltf',
+    reference: '/2526/2B16.jpg',
+    thumbnailUrl: '/2526/Ma Hoi Cheung 2B16.png',
+    designer: 'Ma Hoi Cheung',
+    category: '馬'
+  },
+  {
+    id: '2B17_2526',
+    name: '蛇',
+    description: '蛇',
+    url: '/2526/She Hiu Laam 2B17.gltf',
+    reference: '/2526/2B17.jpg',
+    thumbnailUrl: '/2526/She Hiu Laam 2B17.png',
+    designer: 'She Hiu Laam',
+    category: '蛇'
+  },
+  {
+    id: '2B18_2526',
+    name: '狗',
+    description: '狗',
+    url: '/2526/Tong Tsz Kiu 2B18.gltf',
+    reference: '/2526/2B18.jpg',
+    thumbnailUrl: '/2526/Tong Tsz Kiu 2B18.png',
+    designer: 'Tong Tsz Kiu',
+    category: '狗'
+  },
+  {
+    id: '2B19_2526',
+    name: '羊',
+    description: '羊',
+    url: '/2526/Wang Kevin 2B19.gltf',
+    reference: '/2526/2B19.jpg',
+    thumbnailUrl: '/2526/Wang Kevin 2B19.png',
+    designer: 'Wang Kevin',
+    category: '羊'
+  },
+  {
+    id: '2B20_2526',
+    name: '羊',
+    description: '羊',
+    url: '/2526/Wong Hei Wun 2B20.gltf',
+    reference: '/2526/2B20.jpg',
+    thumbnailUrl: '/2526/Wong Hei Wun 2B20.png',
+    designer: 'Wong Hei Wun',
+    category: '羊'
+  },
+  {
+    id: '2B21_2526',
+    name: '龍',
+    description: '龍',
+    url: '/2526/Wong Ichiya 2B21.gltf',
+    reference: '/2526/2B21.jpg',
+    thumbnailUrl: '/2526/Wong Ichiya 2B21.png',
+    designer: 'Wong Ichiya',
+    category: '龍'
+  },
+  {
+    id: '2B22_2526',
+    name: '兔',
+    description: '兔',
+    url: '/2526/Wong Sui Lam 2B22.gltf',
+    reference: '/2526/2B22.jpg',
+    thumbnailUrl: '/2526/Wong Sui Lam 2B22.png',
+    designer: 'Wong Sui Lam',
+    category: '兔'
+  },
+  {
+    id: '2B23_2526',
+    name: '蛇',
+    description: '蛇',
+    url: '/2526/Wong Sung Yat 2B23.gltf',
+    reference: null,
+    thumbnailUrl: '/2526/Wong Sung Yat 2B23.png',
+    designer: 'Wong Sung Yat',
+    category: '蛇'
+  },
+  {
+    id: '2B25_2526',
+    name: '龍',
+    description: '龍',
+    url: '/2526/Wong Yat Chun 2B25.gltf',
+    reference: '/2526/2B25.jpg',
+    thumbnailUrl: '/2526/Wong Yat Chun 2B25.png',
+    designer: 'Wong Yat Chun',
+    category: '龍'
+  },
+  {
+    id: '2B26_2526',
+    name: '虎',
+    description: '虎',
+    url: '/2526/Wu Ho Yi 2B26.gltf',
+    reference: '/2526/2B26.jpg',
+    thumbnailUrl: '/2526/Wu Ho Yi 2B26.png',
+    designer: 'Wu Ho Yi',
+    category: '虎'
+  },
 ]
 
 // Year filter store
