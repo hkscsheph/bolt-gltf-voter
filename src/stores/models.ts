@@ -926,6 +926,16 @@ const modelData: Model[] = [
     category: '龍'
   },
   {
+    id: '2G12_2526',
+    name: '鼠',
+    description: '鼠',
+    url: '/2526/Jasmine Kaur 2G12.gltf',
+    reference: '/2526/2G12.jpg',
+    thumbnailUrl: '/2526/Jasmine Kaur 2G12.png',
+    designer: 'Jasmine Kaur',
+    category: '鼠'
+  },
+  {
     id: '2G14_2526',
     name: '兔',
     description: '兔',
